@@ -3,31 +3,177 @@ layout: default
 title: Home
 ---
 
-<div class="posts">
-  {% for post in paginator.posts %}
-  <article class="post">
-    <h1 class="post-title">
-      <a href="{{ site.baseurl }}{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
+<section class="hero is-fullheight" id="section1">
+  <div class="hero-content">
+    <div class="container">
+        <img class="is-centered" src="{{ site.baseurl }}/public/img/moonant-icon.svg"/>
+        <h1 class="title is-2">Радио Лунный Муравей</h1>
+        <h2 class="subtitle">Некоммерческая радиостанция космической направленности.</h2>
+        <div class="box">
+        <div class="columns">
+            <div class="column is-5 column-player">
+                <div class="player" id="player">
+                    <!-- moon-ant player -->
+                </div>
+            </div>
+            <div class="column is-left content column-right">
+                <h3 class="title is-4">На этой неделе в ротации</h3>
+                {% for post in site.categories.rotation limit:1 %}
+                <dl>
+                    {% if post.album-1%}
+                    <li><span class="likebtn-wrapper" data-white_label="true" data-theme="custom" data-btn_size="16" data-icon_l="hrt6" data-icon_size="14" data-icon_l_c_v="#00a8ab" data-bg_c="rgba(255,255,255,0)" data-brdr_c="rgba(255,255,255,0)" data-label_fs="r" data-lang="ru" data-identifier="Album: {{ post.album-1 }}" data-show_like_label="false" data-dislike_enabled="false" data-counter_show="false" data-popup_width="200"></span>
+                        {{ post.album-1 }}</li>{% endif %}
+                    {% if post.album-2%}
+                    <li><span class="likebtn-wrapper" data-white_label="true" data-theme="custom" data-btn_size="16" data-icon_l="hrt6" data-icon_size="14" data-icon_l_c_v="#00a8ab" data-bg_c="rgba(255,255,255,0)" data-brdr_c="rgba(255,255,255,0)" data-label_fs="r" data-lang="ru" data-identifier="Album: {{ post.album-2 }}" data-show_like_label="false" data-dislike_enabled="false" data-counter_show="false" data-popup_width="200"></span>
+                        {{ post.album-2 }}</li>{% endif %}
+                    {% if post.album-3%}
+                    <li><span class="likebtn-wrapper" data-white_label="true" data-theme="custom" data-btn_size="16" data-icon_l="hrt6" data-icon_size="14" data-icon_l_c_v="#00a8ab" data-bg_c="rgba(255,255,255,0)" data-brdr_c="rgba(255,255,255,0)" data-label_fs="r" data-lang="ru" data-identifier="Album: {{ post.album-3 }}" data-show_like_label="false" data-dislike_enabled="false" data-counter_show="false" data-popup_width="200"></span>
+                        {{ post.album-3 }}</li>{% endif %}
+                    {% if post.album-4%}
+                    <li><span class="likebtn-wrapper" data-white_label="true" data-theme="custom" data-btn_size="16" data-icon_l="hrt6" data-icon_size="14" data-icon_l_c_v="#00a8ab" data-bg_c="rgba(255,255,255,0)" data-brdr_c="rgba(255,255,255,0)" data-label_fs="r" data-lang="ru" data-identifier="Album: {{ post.album-4 }}" data-show_like_label="false" data-dislike_enabled="false" data-counter_show="false" data-popup_width="200"></span>
+                        {{ post.album-4 }}</li>{% endif %}
+                    {% if post.album-5%}
+                    <li><span class="likebtn-wrapper" data-white_label="true" data-theme="custom" data-btn_size="16" data-icon_l="hrt6" data-icon_size="14" data-icon_l_c_v="#00a8ab" data-bg_c="rgba(255,255,255,0)" data-brdr_c="rgba(255,255,255,0)" data-label_fs="r" data-lang="ru" data-identifier="Album: {{ post.album-5 }}" data-show_like_label="false" data-dislike_enabled="false" data-counter_show="false" data-popup_width="200"></span>
+                        {{ post.album-5 }}</li>{% endif %}
+                    {% if post.album-6%}
+                    <li><span class="likebtn-wrapper" data-white_label="true" data-theme="custom" data-btn_size="16" data-icon_l="hrt6" data-icon_size="14" data-icon_l_c_v="#00a8ab" data-bg_c="rgba(255,255,255,0)" data-brdr_c="rgba(255,255,255,0)" data-label_fs="r" data-lang="ru" data-identifier="Album: {{ post.album-6 }}" data-show_like_label="false" data-dislike_enabled="false" data-counter_show="false" data-popup_width="200"></span>
+                        {{ post.album-6 }}</li>{% endif %}
+                </dl>
+                <hr/>
+                <p>Каждую неделю мы предлагаем несколько альбомов, а выбранные вами попадут в общий плейлист. Голосуйте!</p>
+                {% endfor %}
+                <div data-background-alpha="0.0" data-buttons-color="#FFFFFF" data-counter-background-color="#ffffff" data-share-counter-size="14" data-top-button="false" data-share-counter-type="disable" data-share-style="1" data-mode="share" data-like-text-enable="false" data-mobile-view="true" data-icon-color="#ffffff" data-orientation="horizontal" data-text-color="#000000" data-share-shape="round-rectangle" data-sn-ids="fb.vk.tw.gp." data-share-size="20" data-background-color="#ffffff" data-preview-mobile="false" data-mobile-sn-ids="fb.vk.tw.wh.ok.vb." data-pid="1490082" data-counter-background-alpha="1.0" data-following-enable="false" data-exclude-show-more="true" data-selection-enable="true" class="uptolike-buttons" ></div>
+            </div>
+        </div>
+        </div>
+    </div>
+  </div>
+</section>
 
-    <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
 
-    {{ post.content }}
-  </article>
-  {% endfor %}
-</div>
+<section class="hero is-fullheight" id="section2">
+  <div class="hero-content">
+    <div class="container">
+      <h1 class="title is-2">Воскресный эфир</h1>
+      <h2 class="subtitle">Каждое воскресенье вас ждет живая беседа, обсуждение последних и предпоследних новостей, мысли вслух, декламации и бормотанье — а также обзор ротации на следующую неделю.</h2>
+      {% for post in site.categories.sunday-live limit:1 %}
+      <div class="box">
+            <div class="columns">
+                <div class="column is-right is-5 content column-left">
+                    <h4 class="episode title is-5"><strong>Выпуск #{{ post.nomer }}:<br/>{{ post.title }}</strong></h4>
+                    <h5 class="subtitle is-6">{{ post.date | date_to_long_string }}</h5>
+                    {% if post.image %}
+                    <img class="sunday-live" src="{{ site.baseurl }}/public/sunday-live/{{ post.image }}" alt="Воскресный эфир - Выпуск {{ post.nomer }}">
+                    {% endif %}
+                    <div class="buttons">
+                        <dl>
+                            {% if post.audio %}
+                            <li class="is-hidden-mobile">
+                                <audio class="sunday-live" src="{{ site.baseurl }}/public/sunday-live/{{ post.audio }}" controls></audio>
+                            </li>{% endif %}
 
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ paginator.next_page_path | prepend: site.baseurl }}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    <a class="pagination-item newer" href="{{ paginator.previous_page_path | prepend: site.baseurl }}">Newer</a>
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
-</div>
+                            {% if post.yt %}
+                            <li>
+                                <a class="button" href="{{ post.yt }}"><i class="fa fa-youtube-play"></i>Слушать на YouTube</a>
+                            </li>{% endif %}
+
+                            {% if post.vk %}
+                            <li>
+                                <a class="button" href="{{ post.vk }}" ><i class="fa fa-vk"></i>Слушать ВКонтакте</a>
+                            </li>{% endif %}
+
+                            {% if post.audio %}
+                            <li>
+                                <a class="button is-primary is-hidden-mobile" href="{{ site.baseurl }}/public/sunday-live/{{ post.audio }}"><i class="fa fa-arrow-down"></i>Скачать в .mp3</a>
+                            </li>
+                            <li>
+                                <a class="button is-primary is-hidden-tablet" href="{{ site.baseurl }}/public/sunday-live/{{ post.audio }}"><i class="fa fa-play"></i>Слушать в .mp3</a>
+                            </li>{% endif %}
+                        </dl>
+                    </div>
+                </div>
+                <div class="column is-left is-7 content column-right">
+                    {{ post.content }}
+
+                    <hr/>
+
+                    <a href="javascript:toggle();" class="button is-primary" id="displayText">Обсудить..</a>
+
+                    <span class="is-pulled-right is-lh">Архив выпусков:&nbsp;
+                        <a href="https://goo.gl/Kjaai6" target="_blank" class="button"> Youtube</a>
+                        <a href="https://vk.com/audios-59428918?album_id=70932405" target="_blank" class="button">ВКонтакте</a>
+                    </span>
+
+                    <span class="is-clearfix"> </span>
+                </div>
+            </div>
+            <div class="columns">
+                <div id="toggleText" class="column is-12 is-left" style="display: none">
+                    <div id="disqus_thread"></div>
+                        <script>
+                        var disqus_config = function () {
+                            this.page.url = '{{ post.url }}';
+                            this.page.identifier = 'VE_{{ post.nomer }}';
+                            this.page.title = 'Вечерний эфир {{ post.nomer }}';
+                        };
+                        (function() {
+                        var d = document, s = d.createElement('script');
+                        s.src = '//moon-ant.disqus.com/embed.js';
+                        s.setAttribute('data-timestamp', +new Date());
+                        (d.head || d.body).appendChild(s);
+                        })();
+                        </script>
+                        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+                </div>
+            </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+
+<section class="hero is-fullheight" id="section3">
+  <div class="hero-content">
+    <div class="container">
+      <h1 class="title">О Муравье</h1>
+      <h2 class="subtitle">Миссия Лунного Муравья — вносить радость в дневные заботы, собирать интересные образцы мысли и поддерживать натяжение небесных струн.</h2>
+      <div class="box">
+            <div class="columns">
+                <div class="column is-right is-5 content column-left">
+                    <blockquote>
+                        <p>Горный муравей – так отчетливо он заметен на белом пионе..</p>
+                        <p><a href="https://ru.wikipedia.org/wiki/Ёса_Бусон" >— Ёса Бусон</a></p>
+                    </blockquote>
+                </div>
+                <div class="column is-left is-7 content column-right">
+                    <h3 class="title is-4">Как услышать Муравья?</h3>
+                    <dl>
+                        <li><strong>На компьютерах:</strong>
+                            <dl>
+                                <li>через приложение Radium <a href="http://radium.me/m/tune-in/?b=moonant&c=1&pb=Радио%20Лунный%20Муравей&pc=Радио%20Лунный%20Муравей&h=&"  class="button is-small">Radium Mac OSX</a> </li>
+                                <li>Winamp или iTunes <a href="http://s25.myradiostream.com:12650/listen.pls"  class="button is-small">*.pls</a></li>
+                                <li>Windows Media Player <a href="http://myradiostream.com/25/12650.asx"  class="button is-small">*.asx</a></li>
+                                <li>VLC Player и др. <a href="http://s25.myradiostream.com:12650/listen.m3u"  class="button is-small">*.m3u</a></li>
+                                <li>а также на сайте, используя встроенный <a href="#section1" class="button is-small play">web-player</a></li>
+                            </dl>
+                        </li>
+                        <li><strong>На смартфонах:</strong>
+                            <dl>
+                                <li>используя приложение Radium <a href="http://radium.me/m/tune-in/?b=moonant&c=1&pb=Радио%20Лунный%20Муравей&pc=Радио%20Лунный%20Муравей&h=&"  class="button is-small">Radium iOS (free)</a></li>
+                            </dl>
+                        </li>
+                        <hr/>
+                    </dl>
+                    <p>Присоединяйтесь к сообществам Лунного Муравья</p>
+                    <p>
+                        <a href="https://www.youtube.com/channel/UCfUTABZP2Yz8wLTY5h78Vcg"  class="button is-primary"><i class="fa fa-youtube"></i>Канал на Youtube</a>
+                        <a href="https://vk.com/moonant" class="button is-primary"><i class="fa fa-vk"></i>/moonant</a>
+                        <a href="https://twitter.com/@moonant_radio" class="button is-primary"><i class="fa fa-twitter"></i>@moonant_radio</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</section>

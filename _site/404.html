@@ -4,46 +4,128 @@
   <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <title>
     
       404: Page not found — Радио Лунный Муравей &middot; Некоммерческая радиостанция космической направленности
     
   </title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="/public/css/style.css">
 
-  <link rel="stylesheet" href="/styles.css">
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
-  <link rel="shortcut icon" href="/public/favicon.ico">
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/public/img/icons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/public/img/icons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/public/img/icons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/public/img/icons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/public/img/icons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/public/img/icons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/public/img/icons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/public/img/icons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/public/img/icons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/public/img/icons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/public/img/icons/favicon-194x194.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="/public/img/icons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/public/img/icons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/public/img/icons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/public/img/icons/manifest.json">
+  <link rel="mask-icon" href="/public/img/icons/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="/public/img/icons/favicon.ico">
+  <meta name="apple-mobile-web-app-title" content="Moon Ant">
+  <meta name="application-name" content="Moon Ant">
+  <meta name="msapplication-TileColor" content="#5bbad5">
+  <meta name="msapplication-TileImage" content="/public/img/icons/mstile-144x144.png">
+  <meta name="msapplication-config" content="/public/img/icons/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Atom -->
   <link rel="alternate" type="application/atom+xml" title="Радио Лунный Муравей" href="/atom.xml">
+
+  <!-- Scripts -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+  <script type="text/javascript" src="/public/js/jquery.slimscroll.min.js"></script>
+  <script type="text/javascript" src="/public/js/kast.js"></script>
+  <script type="text/javascript" src="/public/js/kit42.nowplay.js"></script>
 </head>
 
 
   <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
 
-    <div class="container content">
-      <header class="masthead">
-        <h3 class="masthead-title">
-          <a href="/" title="Home">Радио Лунный Муравей</a>
-          <small>Некоммерческая радиостанция космической направленности</small>
-        </h3>
-      </header>
+    <header class="is-centered">
+    <div class="container">
+        <div class="brain">
+            <a href="http://brainweekspb.org" target="_blank">
+                <img class="is-hidden-touch" src="/public/img/brain-wide.png" alt="14—18 марта 2016. НЕДЕЛЯ МОЗГА - Мозг обучающийся. В рамках Международной Недели Мозга (Brain Awareness Week)"/>
+                <img class="is-hidden-mobile is-hidden-desktop" src="/public/img/brain-normal.png" alt="14—18 марта 2016. НЕДЕЛЯ МОЗГА - Мозг обучающийся. В рамках Международной Недели Мозга (Brain Awareness Week)"/>
+                <img class="is-hidden-tablet" src="/public/img/brain-mobile.png" alt="14—18 марта 2016. НЕДЕЛЯ МОЗГА - Мозг обучающийся. В рамках Международной Недели Мозга (Brain Awareness Week)"/>
+            </a>
+        </div>
+    </div>
+</header>
 
-      <main>
-        <div class="page">
+
+    <footer class="footer is-fullwidth is-centered is-hidden-mobile">
+  <div class="container">
+    <div class="content">
+        <div class="columns">
+            <div class="column is-1 play-bar">
+                <a href="#" class="play kast-mdi kast-mdi-play"><i class="fa fa-play"></i></a>
+                <a href="#" class="pause kast-mdi kast-mdi-pause"><i class="fa fa-pause"></i></a>
+            </div>
+            <div class="column is-left play-title">
+                <p id="nowplay"> </p>
+            </div>
+            <div class="column is-2 play-bar">
+                <span id="nowplay-share"> </span>
+            </div>
+        </div>
+    </div>
+  </div>
+</footer>
+
+
+    <div class="page">
   <h1 class="page-title">404: Страница не существует.</h1>
   <p class="lead">Шеф, все пропало! <a href="/">Попробуй начать всё сначала!</a></p>
 </div>
 
-      </main>
 
-      <footer class="footer">
+      <!-- <footer class="footer">
         <small>
-          &copy; <time datetime="2016-03-03T22:40:26-05:00">2016</time>. All rights reserved.
+          &copy; <time datetime="2016-03-04T00:46:41-05:00">2016</time>. All rights reserved.
         </small>
-      </footer>
-    </div>
+      </footer> -->
 
     
+<!-- Вызов плеера -->
+<script type="text/javascript">
+    $(document).ready(function() {$.kast({colors: 'dynamic',container: '#player',onPlay: function(){$('.play').hide();$('.pause').show();},onPause: function(){$('.play').show();$('.pause').hide();}})} );
+    $('.play').click( function() { $.kast('play'); return false; } );
+    $('.pause').click( function() { $.kast('pause'); return false; } );
+</script>
+<!-- Likes -->
+<script type="text/javascript">(function(w,doc) {
+if (!w.__utlWdgt ) {
+    w.__utlWdgt = true;
+    var d = doc, s = d.createElement('script'), g = 'getElementsByTagName';
+    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+    s.src = ('https:' == w.location.protocol ? 'https' : 'http')  + '://w.uptolike.com/widgets/v1/uptolike.js';
+    var h=d[g]('body')[0];
+    h.appendChild(s);
+}})(window,document);
+</script>
+<!-- Y.counter -->
+<script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter21186256 = new Ya.Metrika({ id:21186256, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/21186256" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- peekin.counter -->
+<script>peekin = {api_key: "334fa58a46c326b6f992"};</script>
+<script src="//api.peekin.io/peekin.js" async></script>
 
 
   </body>
