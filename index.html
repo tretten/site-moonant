@@ -60,10 +60,10 @@ title: Home
       <div class="box">
             <div class="columns">
                 <div class="column is-right is-5 content column-left">
-                    <h4 class="episode title is-5"><strong>Выпуск #{{ post.nomer }}:<br/>{{ post.title }}</strong></h4>
+                    <h4 class="episode title is-5"><strong>Выпуск #{{ post.number }}:<br/>{{ post.title }}</strong></h4>
                     <h5 class="subtitle is-6">{{ post.date | date_to_long_string }}</h5>
                     {% if post.image %}
-                    <img class="sunday-live" src="{{ site.baseurl }}/public/sunday-live/{{ post.image }}" alt="Воскресный эфир - Выпуск {{ post.nomer }}">
+                    <img class="sunday-live" src="{{ site.baseurl }}/public/sunday-live/{{ post.image }}" alt="Воскресный эфир - Выпуск {{ post.number }}">
                     {% endif %}
                     <div class="buttons">
                         <dl>
@@ -113,8 +113,8 @@ title: Home
                         <script>
                         var disqus_config = function () {
                             this.page.url = '{{ post.url }}';
-                            this.page.identifier = 'VE_{{ post.nomer }}';
-                            this.page.title = 'Вечерний эфир {{ post.nomer }}';
+                            this.page.identifier = 'VE_{{ post.number }}';
+                            this.page.title = 'Вечерний эфир {{ post.number }}';
                         };
                         (function() {
                         var d = document, s = d.createElement('script');
