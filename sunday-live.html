@@ -6,7 +6,7 @@ title: Архив вечерних эфиров
 <section class="hero is-fullheight" id="section1">
   <div class="hero-content">
     <div class="container">
-      <a href="{{ site.baseurl }}/"><img class="is-centered" src="{{ site.baseurl }}/public/img/moonant-icon.svg"/></a>
+      <a href="{{ site.baseurl }}"><img class="is-centered" src="{{ site.baseurl }}public/img/moonant-icon.svg"/></a>
       <h1 class="title is-2">Архив воскресных эфиров</h1>
       <h2 class="subtitle">Каждое воскресенье вас ждет живая беседа, обсуждение последних и предпоследних новостей, мысли вслух, декламации и бормотанье — а также обзор ротации на следующую неделю.</h2>
       {% for post in site.categories.sunday-live %}
@@ -15,7 +15,7 @@ title: Архив вечерних эфиров
                 <div class="column is-right is-4 content column-left">
                     <h5 class="subtitle is-6">{{ post.date | date_to_long_string }}</h5>
                     {% if post.image %}
-                    <a href="{{ post.url }}"><img class="image is-128x128 is-pulled-right" src="{{ site.baseurl }}/public/sunday-live/{{ post.image }}" alt="Воскресный эфир - Выпуск {{ post.number }}"></a>
+                    <a href="{{ post.url }}"><img class="image is-128x128 is-pulled-right" src="{{ site.baseurl }}public/sunday-live/{{ post.image }}" alt="Воскресный эфир - Выпуск {{ post.number }}"></a>
                     {% endif %}
                 </div>
                 <div class="column is-left is-8 content column-right">
@@ -23,7 +23,7 @@ title: Архив вечерних эфиров
                     {% if post.audio %}
                     <p>
                         <span class="is-hidden-mobile">
-                            <audio class="sunday-live" src="{{ site.baseurl }}/public/sunday-live/{{ post.audio }}" controls></audio>
+                            <audio class="sunday-live" src="{{ site.baseurl }}public/sunday-live/{{ post.audio }}" controls></audio>
                         </span>
                     </p>{% endif %}
                     <p>
@@ -38,14 +38,14 @@ title: Архив вечерних эфиров
                         </span>{% endif %}
                         {% if post.audio %}
                         <span>
-                            <a class="button is-hidden-mobile" href="{{ site.baseurl }}/public/sunday-live/{{ post.audio }}"><i class="fa fa-arrow-down"></i>Скачать в .mp3</a>
+                            <a class="button is-hidden-mobile" href="{{ site.baseurl }}public/sunday-live/{{ post.audio }}"><i class="fa fa-arrow-down"></i>Скачать в .mp3</a>
                         </span>
                         <span>
-                            <a class="button is-hidden-tablet" href="{{ site.baseurl }}/public/sunday-live/{{ post.audio }}"><i class="fa fa-play"></i>Слушать в .mp3</a>
+                            <a class="button is-hidden-tablet" href="{{ site.baseurl }}public/sunday-live/{{ post.audio }}"><i class="fa fa-play"></i>Слушать в .mp3</a>
                         </span>{% endif %}
                     </p>
                     <hr/>
-                    <a href="{{ site.baseurl }}/{{ post.url }}" class="button is-primary">Полное описание и комментарии</a>
+                    <a href="{{ site.baseurl }}{{ post.url }}" class="button is-primary">Полное описание и комментарии</a>
                 </div>
             </div>
       </div>
