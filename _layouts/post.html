@@ -8,13 +8,31 @@ layout: default
       <div class="container">
         <a href="{{ site.baseurl }}/"><img class="is-centered" src="{{ site.baseurl }}/public/img/moonant-icon.svg"/></a>
 
-        <h1 class="title is-2">Воскресный эфир номер {{ page.number }}</h1>
+        <h1 class="title is-2">Воскресный эфир. Выпуск {{ page.number }}</h1>
         <h2 class="subtitle">&#8612; <a href="{{ site.baseurl }}/sunday-live/">Архив выпусков</a></h2>
         <div class="box">
               <div class="columns">
                   <div class="column is-right is-5 content column-left">
                       <h4 class="episode title is-5"><strong>Выпуск #{{ page.number }}:<br/>{{ page.title }}</strong></h4>
-                      <h5 class="subtitle is-6"><time datetime="{{ page.date | date_to_xmlschema }}" class="page-date">{{ page.date | date_to_long_string }}</time></h5>
+                      <h5 class="subtitle is-6"><time datetime="
+                            {% assign m = page.date | date: "%-m" %}
+                            {{ page.date | date: "%-d" }}
+                            {% case m %}
+                              {% when '1' %}января
+                              {% when '2' %}февраля
+                              {% when '3' %}марта
+                              {% when '4' %}апреля
+                              {% when '5' %}мая
+                              {% when '6' %}июня
+                              {% when '7' %}июля
+                              {% when '8' %}августа
+                              {% when '9' %}сентября
+                              {% when '10' %}октября
+                              {% when '11' %}ноября
+                              {% when '12' %}декабря
+                            {% endcase %}
+                            {{ page.date | date: "%Y" }}
+                          " class="page-date">{{ page.date | date_to_long_string }}</time></h5>
                       {% if page.image %}
                       <img class="sunday-live" src="{{ site.baseurl }}/public/sunday-live/{{ page.image }}" alt="Воскресный эфир - Выпуск {{ page.number }}">
                       {% endif %}
