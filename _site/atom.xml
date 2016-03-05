@@ -4,7 +4,7 @@
  <title>Радио Лунный Муравей</title>
  <link href="/atom.xml" rel="self"/>
  <link href="/"/>
- <updated>2016-03-04T00:46:41-05:00</updated>
+ <updated>2016-03-05T00:39:18-05:00</updated>
  <id></id>
  <author>
    <name></name>
@@ -14,20 +14,61 @@
  
  <entry>
    <title>История Кардигана</title>
-   <link href="/sunday-live/2016/01/02/%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F-%D0%BA%D0%B0%D1%80%D0%B4%D0%B8%D0%B3%D0%B0%D0%BD%D0%B0/"/>
+   <link href="/sunday-live/%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F-%D0%BA%D0%B0%D1%80%D0%B4%D0%B8%D0%B3%D0%B0%D0%BD%D0%B0/"/>
    <updated>2016-01-02T00:00:00-05:00</updated>
-   <id>/sunday-live/2016/01/02/история-кардигана</id>
-   <content type="html">&lt;h4 id=&quot;section&quot;&gt;Новости:&lt;/h4&gt;
+   <id>/sunday-live/история-кардигана</id>
+   <content type="html">&lt;h4 id=&quot;section&quot;&gt;Новости&lt;/h4&gt;
 &lt;ul&gt;
   &lt;li&gt;Новости клеточной полиграфии — печать человеческих органов на 3D-принтере&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&quot;section-1&quot;&gt;Свободная тема:&lt;/h4&gt;
+&lt;h4 id=&quot;section-1&quot;&gt;Свободная тема&lt;/h4&gt;
 &lt;ul&gt;
   &lt;li&gt;О том, как Кардиган провел свою знаменитую атаку легкой кавалерии под Балаклавой, безоговорочно выполняя приказ генерала Реглана.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&quot;section-2&quot;&gt;Ротация:&lt;/h4&gt;
+&lt;h4 id=&quot;section-2&quot;&gt;Ротация&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Об альбомах, вошедших в ротацию на этой неделе&lt;/li&gt;
+  &lt;li&gt;Победители прошлой недели:
+    &lt;ul&gt;
+      &lt;li&gt;Nicolas Horvath, Philip Glass / Glassworlds Vol. 3&lt;/li&gt;
+      &lt;li&gt;Bryan Eno, D Byrne / My Life In The Bush Of Ghosts&lt;/li&gt;
+      &lt;li&gt;Les Ramoneurs de Menhirs / Dans an Diaul&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Вечерний концерт&lt;/strong&gt; (СПб Пт 20:00 / Бостон Сб 20:00)
+    &lt;ul&gt;
+      &lt;li&gt;Various Artists / Zappa’s Universe (1993) – 2 часа&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;section-3&quot;&gt;Материалы, упомянутые в этом выпуске:&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Статья &lt;a href=&quot;https://nplus1.ru/material/2016/02/19/tissue-engeneering&quot;&gt;“Скамейка запасных”&lt;/a&gt; о том, какие искусственные органы уже нашли свое место в теле человекаю&lt;/li&gt;
+  &lt;li&gt;Статьи в Wikipedia о &lt;a href=&quot;https://en.wikipedia.org/wiki/James_Brudenell,_7th_Earl_of_Cardigan&quot;&gt;лорде Кардигане&lt;/a&gt; и о &lt;a href=&quot;https://en.wikipedia.org/wiki/FitzRoy_Somerset,_1st_Baron_Raglan&quot;&gt;лорде Реглане&lt;/a&gt;, а также о &lt;a href=&quot;https://en.wikipedia.org/wiki/Battle_of_Balaclava&quot;&gt;Битве под Балаклавой&lt;/a&gt; и об &lt;a href=&quot;https://en.wikipedia.org/wiki/Charge_of_the_Light_Brigade&quot;&gt;Атаке легкой кавалерии&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Композиция &lt;a href=&quot;https://www.youtube.com/watch?v=2G5rfPISIwo&quot;&gt;Iron Maiden - The Trooper&lt;/a&gt; на Youtube.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>История Кардигана</title>
+   <link href="/sunday-live/%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F-%D0%BA%D0%B0%D1%80%D0%B4%D0%B8%D0%B3%D0%B0%D0%BD%D0%B0-%D0%B4%D0%B2%D0%B0/"/>
+   <updated>2016-01-02T00:00:00-05:00</updated>
+   <id>/sunday-live/история-кардигана-два</id>
+   <content type="html">&lt;h4 id=&quot;section&quot;&gt;Новости&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Новости клеточной полиграфии — печать человеческих органов на 3D-принтере&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;section-1&quot;&gt;Свободная тема&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;О том, как Кардиган провел свою знаменитую атаку легкой кавалерии под Балаклавой, безоговорочно выполняя приказ генерала Реглана.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;section-2&quot;&gt;Ротация&lt;/h4&gt;
 &lt;ul&gt;
   &lt;li&gt;Об альбомах, вошедших в ротацию на этой неделе&lt;/li&gt;
   &lt;li&gt;Победители прошлой недели:
@@ -55,9 +96,9 @@
  
  <entry>
    <title>ротация</title>
-   <link href="/rotation/2016/01/02/%D1%80%D0%BE%D1%82%D0%B0%D1%86%D0%B8%D1%8F/"/>
+   <link href="/rotation/%D1%80%D0%BE%D1%82%D0%B0%D1%86%D0%B8%D1%8F/"/>
    <updated>2016-01-02T00:00:00-05:00</updated>
-   <id>/rotation/2016/01/02/ротация</id>
+   <id>/rotation/ротация</id>
    <content type="html">&lt;p&gt;Каждую неделю мы предлагаем несколько альбомов, а выбранные вами попадут в общий плейлист. Голосуйте!&lt;/p&gt;
 </content>
  </entry>

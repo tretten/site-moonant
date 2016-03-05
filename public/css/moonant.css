@@ -5,6 +5,7 @@ html {
   	background: -webkit-linear-gradient(top, #00a8ab 0%,#002624 100%);
   	background: linear-gradient(to bottom, #00a8ab 0%,#002624 100%);
 	font-size: 16px;
+	color: #262626;
 }
 
 body, button, input, select, textarea {
@@ -24,18 +25,22 @@ a:hover {
 	transition: ease-out all 0.5s;
 }
 
+a.button {
+	margin-bottom: 5px;
+}
+
 dl {
 	list-style: none;
 	margin-bottom: 0.5em;
 }
 
 strong {
-	font-weight: 600;
+	font-weight: 500;
 }
 
 hr {
 	border-top-color: #dadada;
-	margin: 10px 0 20px 0
+	margin: 20px 0
 }
 
 * + * {
@@ -59,15 +64,6 @@ a[href]:not([class]) {
 	background: #fff;
 	border-color: #00a8ab;
 	margin: 0 -10px;
-}
-
-.content li , .content li + li {
-	margin-bottom: .5em;
-	margin-top: 0.25em;
-}
-
-.content li + li {
-	margin-top: 0.5em;
 }
 
 .is-lh {
@@ -108,6 +104,10 @@ a[href]:not([class]) {
 
 .box h4.subtitle, p {
 	color: #444;
+}
+
+.box h4 {
+	font-weight: 400;
 }
 
 div.column.is-5.column-player {
@@ -170,6 +170,10 @@ audio.sunday-live {
 
 .button.icon-fa .fa {
 	margin: 0 -7px 0 -7px;
+}
+
+.buttons li {
+	margin: 0;
 }
 
 #section3 {

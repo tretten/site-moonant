@@ -3,9 +3,80 @@ layout: default
 ---
 
 <article class="post">
-  <h1 class="post-title">{{ page.title }}</h1>
-  <time datetime="{{ page.date | date_to_xmlschema }}" class="post-date">{{ page.date | date_to_string }}</time>
-  {{ content }}
+  <section class="hero is-fullheight" id="section2">
+    <div class="hero-content">
+      <div class="container">
+        <a href="{{ site.baseurl }}/"><img class="is-centered" src="{{ site.baseurl }}/public/img/moonant-icon.svg"/></a>
+        {% for post in site.categories.sunday-live limit:1 %}
+        <h1 class="title is-2">Воскресный эфир номер {{ post.number }}.</h1>
+        <h2 class="subtitle">Каждое воскресенье вас ждет живая беседа, обсуждение последних и предпоследних новостей, мысли вслух, декламации и бормотанье — а также обзор ротации на следующую неделю.</h2>
+        <div class="box">
+              <div class="columns">
+                  <div class="column is-right is-5 content column-left">
+                      <h4 class="episode title is-5"><strong>Выпуск #{{ post.number }}:<br/>{{ post.title }}</strong></h4>
+                      <h5 class="subtitle is-6"><time datetime="{{ page.date | date_to_xmlschema }}" class="post-date">{{ page.date | date_to_long_string }}</time></h5>
+                      {% if post.image %}
+                      <img class="sunday-live" src="{{ site.baseurl }}/public/sunday-live/{{ post.image }}" alt="Воскресный эфир - Выпуск {{ post.number }}">
+                      {% endif %}
+                      <div class="buttons">
+                          <dl>
+                              {% if post.audio %}
+                              <li class="is-hidden-mobile">
+                                  <audio class="sunday-live" src="{{ site.baseurl }}/public/sunday-live/{{ post.audio }}" controls></audio>
+                              </li>{% endif %}
+
+                              {% if post.yt %}
+                              <li>
+                                  <a class="button" href="{{ post.yt }}"><i class="fa fa-youtube-play"></i>Слушать на YouTube</a>
+                              </li>{% endif %}
+
+                              {% if post.vk %}
+                              <li>
+                                  <a class="button" href="{{ post.vk }}" ><i class="fa fa-vk"></i>Слушать ВКонтакте</a>
+                              </li>{% endif %}
+
+                              {% if post.audio %}
+                              <li>
+                                  <a class="button is-hidden-mobile" href="{{ site.baseurl }}/public/sunday-live/{{ post.audio }}"><i class="fa fa-arrow-down"></i>Скачать в .mp3</a>
+                              </li>
+                              <li>
+                                  <a class="button is-hidden-tablet" href="{{ site.baseurl }}/public/sunday-live/{{ post.audio }}"><i class="fa fa-play"></i>Слушать в .mp3</a>
+                              </li>{% endif %}
+                          </dl>
+                      </div>
+                  </div>
+                  <div class="column is-left is-7 content column-right">
+                      {{ post.content }}
+                  <hr/>
+                  <a href="{{ site.baseurl }}/sunday-live/" class="button is-pulled-right">Архив выпусков</a>
+                      <span class="is-clearfix"> </span>
+                  </div>
+              </div>
+              <div class="columns">
+                  <div id="toggleText" class="column is-12 is-left">
+                      <div id="disqus_thread"></div>
+                          <script>
+                          var disqus_config = function () {
+                            //  this.page.url = '{{ post.url }}';
+                            //  this.page.identifier = 'VE_{{ post.number }}';
+                            //  this.page.title = 'Вечерний эфир {{ post.number }}';
+                          };
+                          (function() {
+                          var d = document, s = d.createElement('script');
+                          s.src = '//moon-ant.disqus.com/embed.js';
+                          s.setAttribute('data-timestamp', +new Date());
+                          (d.head || d.body).appendChild(s);
+                          })();
+                          </script>
+                          <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+                  </div>
+              </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
 </article>
 
 {% if site.related_posts != empty %}

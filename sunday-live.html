@@ -1,23 +1,60 @@
 ---
 layout: default
-title: Home
+title: Архив вечерних эфиров
 ---
 
-<div class="posts">
-  {% for post in paginator.posts %}
-  <article class="post">
-    <h1 class="post-title">
-      <a href="{{ site.baseurl }}{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
+<section class="hero is-fullheight" id="section2">
+  <div class="hero-content">
+    <div class="container">
+      <a href="{{ site.baseurl }}/"><img class="is-centered" src="{{ site.baseurl }}/public/img/moonant-icon.svg"/></a>
+      <h1 class="title is-2">Архив воскресных эфиров</h1>
+      <h2 class="subtitle">Каждое воскресенье вас ждет живая беседа, обсуждение последних и предпоследних новостей, мысли вслух, декламации и бормотанье — а также обзор ротации на следующую неделю.</h2>
+      {% for post in site.categories.sunday-live %}
+      <div class="box">
+            <div class="columns">
+                <div class="column is-right is-4 content column-left">
+                    <h5 class="subtitle is-6">{{ post.date | date_to_long_string }}</h5>
+                    {% if post.image %}
+                    <a href="{{ post.url }}"><img class="image is-128x128 is-pulled-right" src="{{ site.baseurl }}/public/sunday-live/{{ post.image }}" alt="Воскресный эфир - Выпуск {{ post.number }}"></a>
+                    {% endif %}
+                </div>
+                <div class="column is-left is-8 content column-right">
+                    <a href="{{ post.url }}"><h4 class="episode title is-5"><strong>Выпуск #{{ post.number }}:<br/>{{ post.title }}</strong></h4></a>
+                    {% if post.audio %}
+                    <p>
+                        <span class="is-hidden-mobile">
+                            <audio class="sunday-live" src="{{ site.baseurl }}/public/sunday-live/{{ post.audio }}" controls></audio>
+                        </span>
+                    </p>{% endif %}
+                    <p>
+                        {% if post.yt %}
+                        <span>
+                            <a class="button" href="{{ post.yt }}"><i class="fa fa-youtube-play"></i>Слушать на YouTube</a>
+                        </span>{% endif %}
 
-    <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
+                        {% if post.vk %}
+                        <span>
+                            <a class="button" href="{{ post.vk }}" ><i class="fa fa-vk"></i>Слушать ВКонтакте</a>
+                        </span>{% endif %}
+                        {% if post.audio %}
+                        <span>
+                            <a class="button is-hidden-mobile" href="{{ site.baseurl }}/public/sunday-live/{{ post.audio }}"><i class="fa fa-arrow-down"></i>Скачать в .mp3</a>
+                        </span>
+                        <span>
+                            <a class="button is-hidden-tablet" href="{{ site.baseurl }}/public/sunday-live/{{ post.audio }}"><i class="fa fa-play"></i>Слушать в .mp3</a>
+                        </span>{% endif %}
+                    </p>
+                    <hr/>
+                    <a href="{{ post.url }}" class="button is-primary">Полное описание и комментарии</a>
+                </div>
+            </div>
+      </div>
+      <br/>
+      {% endfor %}
+    </div>
+  </div>
+</section>
 
-    {{ post.content }}
-  </article>
-  {% endfor %}
-</div>
 
 <div class="pagination">
   {% if paginator.next_page %}
