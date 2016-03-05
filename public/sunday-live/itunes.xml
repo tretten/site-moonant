@@ -34,9 +34,6 @@ layout: null
       <itunes:author>moon-ant.com</itunes:author>
       <itunes:summary><![CDATA[
           {{ post.content }}
-          <br/>
-          <a href="http://j.mp/sunday-live-yt">Канал на YouTube</a><br/>
-          <a href="http://j.mp/sunday-live-vk">Плейлист в VK</a><br/>
           ]]>
       </itunes:summary>
       <itunes:image href="{{ site.baseurl }}/public/sunday-live/{{ post.image }}" />
