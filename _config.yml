@@ -8,8 +8,13 @@ url:                 "http://moon-ant.com"
 paginate:            10
 baseurl:             "http://moon-ant.com"
 
-
 # Gems
 gems:
   - jekyll-paginate
   - jekyll-gist
+
+# About/contact
+author:
+    name:               Moon Ant
+    url:                http://moon-ant.com
+    email:              moonant.radio@gmail.com
