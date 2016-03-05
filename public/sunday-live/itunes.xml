@@ -29,10 +29,10 @@ layout: null
     <itunes:explicit>no</itunes:explicit>
     {% for post in site.categories.sunday-live %}
     <item>
-      <title>Воскресный эфир {{ post.number }}: {{ post.title }}</title>
+      <title>Воскресный эфир {{ post.number }}: {{ post.title | xml_escape}}</title>
       <itunes:subtitle>{{ post.description }}</itunes:subtitle>
       <itunes:author>moon-ant.com</itunes:author>
-      <itunes:summary>{{ post.content | xml_escape}}</itunes:summary>
+      <itunes:summary>{{ post.content }}</itunes:summary>
       <itunes:image href="{{ site.baseurl }}/public/sunday-live/{{ post.image }}" />
 
       <enclosure url="{{ site.baseurl }}/public/sunday-live/{{ post.audio }}" length="8727310" type="audio/mpeg" />
@@ -41,7 +41,7 @@ layout: null
 
       <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
 
-      <itunes:duration>59:59</itunes:duration>
+      <itunes:duration>60:00</itunes:duration>
 
     </item>
     {% endfor %}
