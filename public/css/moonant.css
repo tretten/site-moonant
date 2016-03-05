@@ -185,7 +185,7 @@ audio.sunday-live {
 }
 
 #disqus_thread {
-	padding: 20px 30px;
+	padding: 10px 20px;
 }
 
 /*_Footer*/
@@ -197,6 +197,7 @@ audio.sunday-live {
 	bottom: 0px;
 	padding: 0;
 	padding-top: 10px;
+	border-top: 1px solid #d3d6db;
 }
 
 .footer .play-bar {
