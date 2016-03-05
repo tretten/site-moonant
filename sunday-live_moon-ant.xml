@@ -36,6 +36,7 @@ layout: null
 			<guid>{{ site.baseurl }}/public/sunday-live/{{ post.audio }}</guid>
 			<itunes:summary><![CDATA[
 				Воскресный эфир {{ post.number }}: {{ post.title | xml_escape }}
+				<br/>
 				{{ post.content }}
 				{% if post.yt %}
 				<br/>
