@@ -6,7 +6,7 @@ title:               Радио Лунный Муравей
 tagline:             Некоммерческая радиостанция космической направленности
 url:
 paginate:            5
-# baseurl:             "http://tretten.github.io/moon-ant.com/"
+baseurl:             "http://tretten.github.io/moon-ant.com/"
 
 
 # Gems
