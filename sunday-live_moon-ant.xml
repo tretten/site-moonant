@@ -6,8 +6,8 @@ layout: null
 <rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
 	<channel>
 		<title>Воскресный эфир на {{ site.title }}</title>
-		<link href="{{ site.url }}{{ site.baseurl }}/sunday-live_moon-ant.xml" rel="self"/>
-		<link href="{{ site.url }}{{ site.baseurl }}/"/>
+		<link href="{{ site.baseurl }}/sunday-live_moon-ant.xml" rel="self"/>
+		<link href="{{ site.baseurl }}/"/>
 		<lastBuildDate>{{ site.time | date_to_xmlschema }}</lastBuildDate>
 		<language>ru-RU</language>
 		<itunes:author>{{ site.author.name }}</itunes:author>
@@ -35,7 +35,7 @@ layout: null
 			<enclosure url="{{ site.baseurl }}/public/sunday-live/{{ post.audio }}" length="92050371" type="audio/mpeg" />
 			<guid>{{ site.baseurl }}/public/sunday-live/{{ post.audio }}</guid>
 			<itunes:summary><![CDATA[
-				<h2>Воскресный эфир {{ post.number }}: {{ post.title | xml_escape }}</h2>
+				Воскресный эфир {{ post.number }}: {{ post.title | xml_escape }}
 				{{ post.content }}
 				{% if post.yt %}
 				<br/>
