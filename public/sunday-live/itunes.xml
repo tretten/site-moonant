@@ -22,8 +22,8 @@ layout: null
 
     <itunes:image href="http://moon-ant.com/public/sunday-live/podcast-cover.png" />
 
-    <itunes:category text="Music">
-      <itunes:category text="Music"/>
+    <itunes:category text="Podcast">
+      <itunes:category text="Podcast"/>
     </itunes:category>
 
     <itunes:explicit>no</itunes:explicit>
