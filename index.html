@@ -61,7 +61,12 @@ title: Home
             <div class="columns">
                 <div class="column is-right is-5 content column-left">
                     <a href="{{ post.url }}"><h4 class="episode title is-5"><strong>Выпуск #{{ post.number }}:<br/>{{ post.title }}</strong></h4></a>
-                    <h5 class="subtitle is-6">{% assign m = page.date | date: "%-m" %}{{ page.date | date: "%-d" }}{% case m %}{% when '1' %}января{% when '2' %}февраля{% when '3' %}марта{% when '4' %}апреля{% when '5' %}мая{% when '6' %}июня{% when '7' %}июля{% when '8' %}августа{% when '9' %}сентября{% when '10' %}октября{% when '11' %}ноября{% when '12' %}декабря{% endcase %}{{ page.date | date: "%Y" }}</h5>
+                    <h5 class="subtitle is-6">
+                        {% assign m = post.date | date: "%-m" %}
+                        {{ post.date | date: "%-d" }}
+                        {% case m %}{% when '1' %}января{% when '2' %}февраля{% when '3' %}марта{% when '4' %}апреля{% when '5' %}мая{% when '6' %}июня{% when '7' %}июля{% when '8' %}августа{% when '9' %}сентября{% when '10' %}октября{% when '11' %}ноября{% when '12' %}декабря{% endcase %}
+                        {{ post.date | date: "%Y" }}
+                    </h5>
                     {% if post.image %}
                     <img class="sunday-live" src="{{ site.baseurl }}/public/sunday-live/{{ post.image }}" alt="Воскресный эфир - Выпуск {{ post.number }}">
                     {% endif %}
