@@ -41,7 +41,7 @@ layout: null
 
       <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
 
-      <itunes:duration>60:00</itunes:duration>
+      <itunes:duration>{{ post.duration }}</itunes:duration>
 
     </item>
     {% endfor %}
