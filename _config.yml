@@ -4,7 +4,7 @@ permalink:           /:categories/:title/
 # Setup
 title:               Радио Лунный Муравей
 tagline:             Некоммерческая радиостанция космической направленности
-url:
+url:                 "http://moon-ant.com"
 paginate:            10
 baseurl:             "http://moon-ant.com"
 
