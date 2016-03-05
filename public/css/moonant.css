@@ -15,18 +15,19 @@ body, button, input, select, textarea {
 
 a {
 	color: #00a8ab;
-	-webkit-transition: ease-out all 0.5s;
-	transition: ease-out all 0.5s;
+	-webkit-transition: ease-out all 0.2s;
+	transition: ease-out all 0.52;
 }
 
 a:hover {
 	color: #028688;
-	-webkit-transition: ease-out all 0.5s;
-	transition: ease-out all 0.5s;
+	-webkit-transition: ease-out all 0.3s;
+	transition: ease-out all 0.3s;
 }
 
-a.button {
+a.button:not(:last-child) {
 	margin-bottom: 5px;
+	margin-right: 5px;
 }
 
 dl {
@@ -40,7 +41,7 @@ strong {
 
 hr {
 	border-top-color: #dadada;
-	margin: 20px 0
+	margin: 18px 0 20px 0
 }
 
 * + * {
@@ -53,6 +54,14 @@ a[href^="http"]:empty::before {
 
 a[href]:not([class]) {
   text-decoration: none;
+}
+
+.hero p {
+	color: rgba(255, 255, 255, 0.8);
+}
+
+.hero .box p {
+	color: #333;
 }
 
 .content ul {
@@ -132,6 +141,23 @@ div.column.is-5.column-player {
 	margin-bottom: 0;
 }
 
+.box .column-left-0 {
+	margin: 0;
+	padding: 0;
+	background: rgba(255,255,255,0.9);
+}
+
+.box .column-left-0 img {
+	min-height: 335px;
+	width: auto;
+	margin: 0;
+	object-fit: cover;
+}
+
+.box .column-left-0 .image.is-square {
+	padding: 0;
+}
+
 .box .column-right {
 	background: #fff;
 }
@@ -154,12 +180,6 @@ h4.episode {
 	font-size: 24px;
 }
 
-img.sunday-live {
-	width: 100%;
-	height: auto;
-	margin: 10px 0 0;
-}
-
 audio.sunday-live {
 	width: 100%;
 }
@@ -176,6 +196,10 @@ audio.sunday-live {
 	margin: 0 -7px 0 -7px;
 }
 
+.button.is-small .fa {
+	margin: -3px -4px 0 -4px;
+}
+
 .buttons li {
 	margin: 0;
 }
@@ -186,6 +210,10 @@ audio.sunday-live {
 
 #disqus_thread {
 	padding: 10px 20px;
+}
+
+.navbar {
+	margin-top: 40px;
 }
 
 /*_Footer*/

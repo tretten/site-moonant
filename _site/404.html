@@ -91,14 +91,14 @@
     <div class="container">
         <a href="/"><img class="is-centered" src="/public/img/moonant-icon.svg"/></a>
         <h1 class="title is-2">404: Страница уничтожена.</h1>
-        <h2 class="subtitle">Шеф, все пропало! <a href="/">Попробуй начать всё сначала!</a></h2>
+        <h2 class="subtitle">Шеф, все пропало! <a href="/">Попробуй начать всё с начала</a></h2>
     </div>
 </div>
 </section>
 
       <!-- <footer class="footer">
         <small>
-          &copy; <time datetime="2016-03-05T00:59:59-05:00">2016</time>. All rights reserved.
+          &copy; <time datetime="2016-03-05T14:04:57-05:00">2016</time>. All rights reserved.
         </small>
       </footer> -->
     
@@ -108,22 +108,31 @@
     $('.play').click( function() { $.kast('play'); return false; } );
     $('.pause').click( function() { $.kast('pause'); return false; } );
 </script>
-<!-- Likes -->
-<script type="text/javascript">(function(w,doc) {
-if (!w.__utlWdgt ) {
-    w.__utlWdgt = true;
-    var d = doc, s = d.createElement('script'), g = 'getElementsByTagName';
-    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
-    s.src = ('https:' == w.location.protocol ? 'https' : 'http')  + '://w.uptolike.com/widgets/v1/uptolike.js';
-    var h=d[g]('body')[0];
-    h.appendChild(s);
-}})(window,document);
-</script>
 <!-- Y.counter -->
 <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter21186256 = new Ya.Metrika({ id:21186256, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/21186256" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- peekin.counter -->
+<!-- peekin.counter
 <script>peekin = {api_key: "334fa58a46c326b6f992"};</script>
-<script src="//api.peekin.io/peekin.js" async></script>
+<script src="//api.peekin.io/peekin.js" async></script> -->
+<!-- On Copy -->
+<script type="text/javascript">
+function addLink() {
+    var body_element = document.getElementsByTagName('body')[0];
+    var selection;
+    selection = window.getSelection();
+    var pagelink = " - <a href='"+document.location.href+"'>"+document.location.href+"</a>";
+    var copytext = selection + pagelink;
+    var newdiv = document.createElement('div');
+    newdiv.style.position='absolute';
+    newdiv.style.left='-99999px';
+    body_element.appendChild(newdiv);
+    newdiv.innerHTML = copytext;
+    selection.selectAllChildren(newdiv);
+    window.setTimeout(function() {
+        body_element.removeChild(newdiv);
+    },0);
+}
+document.oncopy = addLink;
+</script>
 
   </body>
 </html>
