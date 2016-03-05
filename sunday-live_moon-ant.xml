@@ -6,7 +6,6 @@ layout: null
 <rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
 	<channel>
 		<title>Воскресный эфир на {{ site.title }}</title>
-		<link href="{{ site.baseurl }}/sunday-live_moon-ant.xml" rel="self"/>
 		<link href="{{ site.baseurl }}/"/>
 		<lastBuildDate>{{ site.time | date_to_xmlschema }}</lastBuildDate>
 		<language>ru-RU</language>
@@ -22,12 +21,12 @@ layout: null
 			<itunes:email>moonant-radio@gmail.com</itunes:email>
 		</itunes:owner>
 		<itunes:image href="http://moon-ant.com/public/sunday-live/podcast-cover.png" />
-		<itunes:category text="Podcasting"/>
+		<itunes:category text="Music"/>
 		{% for post in site.categories.sunday-live %}
 		<item>
 			<title>Воскресный эфир {{ post.number }}: {{ post.title | xml_escape }}</title>
 			<itunes:subtitle>{{ post.description }}</itunes:subtitle>
-			<pubDate>{{ post.date | date_to_xmlschema }}</pubDate>
+			<pubDate>{{ post.date }}</pubDate>
 			<link>{{ site.baseurl }}/public/sunday-live/{{ post.audio }}</link>
 			<itunes:duration>59:59</itunes:duration>
 			<itunes:author>Радио "Лунный муравей"</itunes:author>
