@@ -1,0 +1,49 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
+
+  <channel>
+    <title>"Воскресный эфир" на радио "Лунный муравей"</title>
+    <link>{{ site.baseurl }}</link>
+    <language>ru-RU</language>
+    <copyright>&#x2117; &amp; &#xA9; {{ site.date | date: "%Y"}}, moon-ant.com </copyright>
+    <itunes:subtitle>Беседы о космосе, музыке и музыкантах, об интересных историях и занятных фактах.</itunes:subtitle>
+    <itunes:author>moon-ant.com</itunes:author>
+    <itunes:summary>Каждое воскресенье вас ждет живая беседа, обсуждение последних и предпоследних новостей, мысли вслух, декламации и бормотанье — а также обзор ротации на следующую неделю.</itunes:summary>
+    <description>Каждое воскресенье вас ждет живая беседа, обсуждение последних и предпоследних новостей, мысли вслух, декламации и бормотанье — а также обзор ротации на следующую неделю.</description>
+
+    <itunes:owner>
+      <itunes:name>moon-ant.com</itunes:name>
+      <itunes:email>moonant.radio@gmail.com</itunes:email>
+    </itunes:owner>
+
+    <itunes:image href="http://moon-ant.com/public/sunday-live/podcast-cover.png" />
+
+    <itunes:category text="Music">
+      <itunes:category text="Music"/>
+    </itunes:category>
+
+    <itunes:explicit>no</itunes:explicit>
+    {% for post in site.categories.sunday-live %}
+    <item>
+      <title>Воскресный эфир {{ post.number }}: {{ post.title }}</title>
+      <itunes:subtitle>{{ post.description }}</itunes:subtitle>
+      <itunes:author>moon-ant.com</itunes:author>
+      <itunes:summary>{{ post.content }}</itunes:summary>
+      <itunes:image href="{{ site.baseurl }}/public/sunday-live/{{ post.image }}" />
+
+      <enclosure url="{{ site.baseurl }}/public/sunday-live/{{ post.audio }}" length="8727310" type="audio/mpeg" />
+
+      <guid>{{ post.number }}</guid>
+
+      <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+
+      <itunes:duration>59:59</itunes:duration>
+
+    </item>
+    {% endfor %}
+  </channel>
+</rss>
