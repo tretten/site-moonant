@@ -110,8 +110,8 @@ a[href]:not([class]) {
 	background: #028688;
 }
 
-.box {
-	margin: 40px auto;
+.box:not(:last-child) {
+	margin: 40px auto 80px;
 }
 
 .box h4.subtitle, p {
