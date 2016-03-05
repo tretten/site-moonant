@@ -37,10 +37,10 @@ title: Архив вечерних эфиров
                             <a class="button" href="{{ post.vk }}" ><i class="fa fa-vk"></i>Слушать ВКонтакте</a>
                         </span>{% endif %}
                         {% if post.audio %}
-                        <span>
+                        <span class="is-pulled-right">
                             <a class="button is-hidden-mobile" href="{{ site.baseurl }}/public/sunday-live/{{ post.audio }}"><i class="fa fa-arrow-down"></i>Скачать в .mp3</a>
                         </span>
-                        <span>
+                        <span class="is-pulled-right">
                             <a class="button is-hidden-tablet" href="{{ site.baseurl }}/public/sunday-live/{{ post.audio }}"><i class="fa fa-play"></i>Слушать в .mp3</a>
                         </span>{% endif %}
                     </p>
