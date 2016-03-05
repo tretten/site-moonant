@@ -110,7 +110,7 @@ a[href]:not([class]) {
 	background: #028688;
 }
 
-.box:not(:last-child) {
+.box {
 	margin: 40px auto 80px;
 }
 
@@ -146,7 +146,7 @@ div.column.is-5.column-player {
 	background: rgba(255,255,255,0.9);
 }
 
-.box .column-left-0 img {
+.box .column-left-0 img.sunday-live {
 	min-height: 336px;
 	width: auto;
 	margin: 0;
@@ -205,10 +205,6 @@ audio.sunday-live {
 
 .buttons li {
 	margin: 0;
-}
-
-#section3 {
-	margin-bottom: 50px;
 }
 
 #disqus_thread {
