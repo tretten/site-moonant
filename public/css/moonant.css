@@ -270,7 +270,8 @@ audio.sunday-live {
 
 .footer .play-title {
 	line-height: 40px;
-	margin-left: 10px
+	margin-left: 10px;
+	overflow-x: hidden;
 }
 
 .footer:hover .play-bar {
