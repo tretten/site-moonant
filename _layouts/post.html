@@ -19,12 +19,7 @@ layout: default
                 <h2 class="subtitle">&#8612; <a href="{{ site.baseurl }}/sunday-live/">Все выпуски</a></h2>
             </div>
             <div class="column is-8 is-right">
-                <p>Архив: 
-                    <a href="http://j.mp/sunday-live-yt" class="button is-small is-primary"><i class="fa fa-youtube-play"></i> YouTube</a>
-                    <a href="http://j.mp/sunday-live-vk" class="button is-small is-primary"><i class="fa fa-vk"></i> ВКонтакте</a>
-                    <a href="#" class="button is-small is-primary"><i class="fa fa-music"></i>  iTunes</a>
-                    <a href="#" class="button is-small is-primary"><i class="fa fa-rss"></i> RSS</a>
-                </p>
+                {% include arhivelinks.html %}
             </div>
         </div>
 
@@ -90,13 +85,20 @@ layout: default
               </div>
           </div>
 
+          <div class="columns navbar">
+              <div class="column is-4 is-left">
+                  <h2 class="subtitle">&#8612; <a href="{{ site.baseurl }}/sunday-live/">Все выпуски</a></h2>
+              </div>
+              <div class="column is-8 is-right">
+                  {% include arhivelinks.html %}
+              </div>
+          </div>
+        <br/>
       </div>
     </div>
   </section>
 </article>
-<div id="player" class="is-hidden-desktop is-hidden-desktop">
-
-</div>
+<div id="player" class="is-hidden-desktop is-hidden-desktop"> </div>
 <!-- {% if site.related_posts != empty %}
 <aside class="related">
   <h3>Related posts</h3>
