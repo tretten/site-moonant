@@ -15,11 +15,11 @@ title: Архив вечерних эфиров
                 <div class="column is-right is-4 content column-left">
                     <h5 class="subtitle is-6">{{ post.date | date_to_long_string }}</h5>
                     {% if post.image %}
-                    <a href="{{ post.url }}"><img class="image is-128x128 is-pulled-right" src="{{ site.baseurl }}/public/sunday-live/{{ post.image }}" alt="Воскресный эфир - Выпуск {{ post.number }}"></a>
+                    <a href="{{ site.baseurl }}{{ post.url }}"><img class="image is-128x128 is-pulled-right" src="{{ site.baseurl }}/public/sunday-live/{{ post.image }}" alt="Воскресный эфир - Выпуск {{ post.number }}"></a>
                     {% endif %}
                 </div>
                 <div class="column is-left is-8 content column-right">
-                    <a href="{{ post.url }}"><h4 class="episode title is-5"><strong>Выпуск #{{ post.number }}:<br/>{{ post.title }}</strong></h4></a>
+                    <a href="{{ site.baseurl }}{{ post.url }}"><h4 class="episode title is-5"><strong>Выпуск #{{ post.number }}:<br/>{{ post.title }}</strong></h4></a>
                     {% if post.audio %}
                     <p>
                         <span class="is-hidden-mobile">
