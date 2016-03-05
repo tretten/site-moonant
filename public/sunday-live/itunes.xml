@@ -32,7 +32,13 @@ layout: null
       <title>Воскресный эфир {{ post.number }}: {{ post.title }}</title>
       <itunes:subtitle>{{ post.description }}</itunes:subtitle>
       <itunes:author>moon-ant.com</itunes:author>
-      <itunes:summary>{{ post.content }}</itunes:summary>
+      <itunes:summary><![CDATA[
+          {{ post.content }}
+          <br/>
+          <a href="http://j.mp/sunday-live-yt">Канал на YouTube</a><br/>
+          <a href="http://j.mp/sunday-live-vk">Плейлист в VK</a><br/>
+          ]]>
+      </itunes:summary>
       <itunes:image href="{{ site.baseurl }}/public/sunday-live/{{ post.image }}" />
 
       <enclosure url="{{ site.baseurl }}/public/sunday-live/{{ post.audio }}" length="8727310" type="audio/mpeg" />
