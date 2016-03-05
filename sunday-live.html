@@ -20,6 +20,9 @@ title: Архив вечерних эфиров
                 </div>
                 <div class="column is-left is-8 content column-right">
                     <a href="{{ site.baseurl }}{{ post.url }}"><h4 class="episode title is-5"><strong>Выпуск #{{ post.number }}: {{ post.title }}</strong></h4></a>
+                    <p>
+                        {{ post.excerpt }}
+                    </p>
                     {% if post.audio %}
                     <p>
                         <span class="is-hidden-mobile">
