@@ -78,6 +78,10 @@ a[href]:not([class]) {
 	color: rgba(255,255,255,0.85);
 }
 
+.subtitle a {
+	color: #fff;
+}
+
 .title + .subtitle {
 	margin-top: 0;
 }
