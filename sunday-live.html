@@ -28,7 +28,7 @@ title:  Все выпуски «Воскресного эфира»
             <div class="columns">
                 <div class="column is-right is-4 column-left-0 is-hidden-touch">
                     {% if post.image %}
-                    <a href="{{ site.baseurl }}{{ post.url }}"><img class="image sunday-live is-square" src="{{ site.baseurl }}/public/sunday-live/{{ post.image }}" alt="Воскресный эфир - Выпуск {{ post.number }}"></a>
+                    <a href="{{ site.baseurl }}{{ post.url }}"><img class="image sunday-live is-square" src="{{ site.baseurl }}/public/sunday-live/{{ post.image }}" alt="Воскресный эфир - Выпуск {{ post.number }}: {{ post.title }}"></a>
                     {% endif %}
                 </div>
                 <div class="column is-left content column-right">
