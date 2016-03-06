@@ -30,6 +30,10 @@ a.button:not(:last-child) {
 	margin-right: 5px;
 }
 
+.button {
+	color: #66696c;
+}
+
 dl {
 	list-style: none;
 	margin-bottom: 0.5em;
