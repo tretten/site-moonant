@@ -9,10 +9,6 @@ layout: default
         <a href="{{ site.baseurl }}/"><img class="is-centered" src="{{ site.baseurl }}/public/img/moonant-icon.svg"/></a>
 
         <h1 class="title is-2">{{ page.title }}</h1>
-        <h2 class="subtitle">«Воскресный эфир», выпуск {{ page.number }} от {% assign m = page.date | date: "%-m" %}
-        {{ page.date | date: "%-d" }}
-        {% case m %}{% when '1' %}января{% when '2' %}февраля{% when '3' %}марта{% when '4' %}апреля{% when '5' %}мая{% when '6' %}июня{% when '7' %}июля{% when '8' %}августа{% when '9' %}сентября{% when '10' %}октября{% when '11' %}ноября{% when '12' %}декабря{% endcase %}
-        {{ page.date | date: "%Y" }} года</h2>
 
         <div class="columns navbar">
             <div class="column is-4 is-left">
@@ -22,6 +18,11 @@ layout: default
                 {% include arhivelinks.html %}
             </div>
         </div>
+
+        <h5 class="subtitle is-4">«Воскресный эфир», выпуск {{ page.number }} от {% assign m = page.date | date: "%-m" %}
+        {{ page.date | date: "%-d" }}
+        {% case m %}{% when '1' %}января{% when '2' %}февраля{% when '3' %}марта{% when '4' %}апреля{% when '5' %}мая{% when '6' %}июня{% when '7' %}июля{% when '8' %}августа{% when '9' %}сентября{% when '10' %}октября{% when '11' %}ноября{% when '12' %}декабря{% endcase %}
+        {{ page.date | date: "%Y" }} года</h5>
 
         <div class="box">
               <div class="columns">
@@ -62,9 +63,6 @@ layout: default
                       <div id="disqus_thread"></div>
                           <script>
                           var disqus_config = function () {
-                            //  this.page.url = '{{ page.url }}';
-                            //  this.page.identifier = 'VE_{{ page.number }}';
-                            //  this.page.title = 'Вечерний эфир {{ page.number }}';
                           };
                           (function() {
                           var d = document, s = d.createElement('script');
