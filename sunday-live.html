@@ -41,23 +41,16 @@ title:  Все выпуски «Воскресного эфира»
                         </span>
                     </p>{% endif %}
                     <p>
-                        <span>
-                        Слушать:
+                        {% if post.audio %}
+                            <a class="button is-hidden-mobile" href="{{ site.baseurl }}/public/sunday-live/{{ post.audio }}"><i class="fa fa-arrow-down"></i>.mp3</a>
+                            <a class="button is-primary is-hidden-tablet" href="{{ site.baseurl }}/public/sunday-live/{{ post.audio }}"><i class="fa fa-play"></i>Слушать</a>
+                        {% endif %}
                         {% if post.yt %}
                             <a class="button" href="{{ post.yt }}"><i class="fa fa-youtube-play"></i>YouTube</a>
                         {% endif %}
-
                         {% if post.vk %}
                             <a class="button" href="{{ post.vk }}" ><i class="fa fa-vk"></i>ВКонтакте</a>
                         {% endif %}
-                        </span>
-                        {% if post.audio %}
-                        <span class="is-pulled-right">
-                            <a class="button is-hidden-mobile" href="{{ site.baseurl }}/public/sunday-live/{{ post.audio }}"><i class="fa fa-arrow-down"></i>.mp3</a>
-                        </span>
-                        <span>
-                            <a class="button is-hidden-tablet" href="{{ site.baseurl }}/public/sunday-live/{{ post.audio }}"><i class="fa fa-play"></i>Слушать</a>
-                        </span>{% endif %}
                     </p>
                     <hr/>
                     <a href="{{ site.baseurl }}{{ post.url }}" class="button is-primary">Полное описание и комментарии</a>

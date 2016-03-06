@@ -30,29 +30,22 @@ layout: default
                       <img class="sunday-live" src="{{ site.baseurl }}/public/sunday-live/{{ page.image }}" alt="Воскресный эфир - Выпуск {{ page.number }}">
                       {% endif %}
                       <div class="buttons">
-                          <dl>
-                              {% if page.audio %}
-                              <li class="is-hidden-mobile">
-                                  <audio class="sunday-live" src="{{ site.baseurl }}/public/sunday-live/{{ page.audio }}" controls></audio>
-                              </li>{% endif %}
-
+                          {% if page.audio %}
+                          <p class="is-hidden-mobile">
+                              <audio class="sunday-live" src="{{ site.baseurl }}/public/sunday-live/{{ page.audio }}" controls></audio>
+                          </p>
+                          {% endif %}
+                          <p>
                               {% if page.yt %}
-                              <li>
-                                  <a class="button" href="{{ page.yt }}"><i class="fa fa-youtube-play"></i>Слушать на YouTube</a>
-                              </li>{% endif %}
-
+                              <a class="button" href="{{ page.yt }}"><i class="fa fa-youtube-play"></i>YouTube</a>
+                              {% endif %}
                               {% if page.vk %}
-                              <li>
-                                  <a class="button" href="{{ page.vk }}" ><i class="fa fa-vk"></i>Слушать ВКонтакте</a>
-                              </li>{% endif %}
-
+                              <a class="button" href="{{ page.vk }}" ><i class="fa fa-vk"></i>ВКонтакте</a>
+                              {% endif %}
                               {% if page.audio %}
-                              <li>
-                                  <a class="button is-hidden-mobile" href="{{ site.baseurl }}/public/sunday-live/{{ page.audio }}"><i class="fa fa-arrow-down"></i>.mp3</a>
-                              </li>
-                              <li>
-                                  <a class="button is-hidden-tablet" href="{{ site.baseurl }}/public/sunday-live/{{ page.audio }}"><i class="fa fa-play"></i>Слушать</a>
-                              </li>{% endif %}
+                              <a class="button is-hidden-mobile" href="{{ site.baseurl }}/public/sunday-live/{{ page.audio }}"><i class="fa fa-arrow-down"></i>.mp3</a> <a class="button is-primary is-hidden-tablet" href="{{ site.baseurl }}/public/sunday-live/{{ page.audio }}"><i class="fa fa-play"></i>Слушать</a>
+                              {% endif %}
+                          </p>
                           </dl>
                       </div>
                   </div>

@@ -133,6 +133,7 @@ div.column.is-5.column-player {
 
 .box .column-left, .box .column-right {
 	padding: 30px;
+	overflow-y: hidden;
 }
 
 .box .column-left {
@@ -234,22 +235,21 @@ audio.sunday-live {
 	top: 0px;
 	padding: 0;
 	padding-top: 10px;
-	border-top: 1px solid #d3d6db;
-	border-bottom: 1px solid #d3d6db;
 	overflow: hidden;
+	box-shadow: 0 2px 7px rgba(0, 0, 0, 0.1);
 }
 
 .footer .play-bar {
 	border-left: 1px solid #d3d6db;
 	border-right: 1px solid #d3d6db;
-	height: 58px;
+	height: 60px;
 }
 
 .footer .play-bar a i {
 	margin: -10px;
 	padding: 0;
 	width: calc(100%+20px);
-	height: 58px;
+	height: 60px;
 	display: block;
 	line-height: 60px;
 }
@@ -303,7 +303,7 @@ transparent.kast-colors-dynamic.kast-maximized.kast-left.kast-not-full-statusbar
 
 #kast, #kast.kast-transparent.kast-current {
 	box-shadow: none;
-	height: 392px;
+	height: 408px;
 }
 
 i.kast-mdi.kast-mdi-play {
@@ -313,7 +313,7 @@ i.kast-mdi.kast-mdi-play {
 #kast-top {
 	background-position: center top;
 	background-image: url(../img/cover.jpg);
-	height: 392px;
+	height: 408px;
 }
 
 #kast-np-title {
