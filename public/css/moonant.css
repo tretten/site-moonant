@@ -354,7 +354,7 @@ i.kast-mdi-album:before {
 }
 
 .lb-like .lb-a, .lb-dislike .lb-a {
-	color: #d3d6db;
+	color: #d3d6db!important;
 }
 
 /*banner*/
