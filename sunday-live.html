@@ -42,12 +42,13 @@ title:  Все выпуски «Воскресного эфира»
                     </p>{% endif %}
                     <p>
                         <span>
+                        Слушать:
                         {% if post.yt %}
-                            <a class="button" href="{{ post.yt }}"><i class="fa fa-youtube-play"></i>Слушать на YouTube</a>
+                            <a class="button" href="{{ post.yt }}"><i class="fa fa-youtube-play"></i>YouTube</a>
                         {% endif %}
 
                         {% if post.vk %}
-                            <a class="button" href="{{ post.vk }}" ><i class="fa fa-vk"></i>Слушать ВКонтакте</a>
+                            <a class="button" href="{{ post.vk }}" ><i class="fa fa-vk"></i>ВКонтакте</a>
                         {% endif %}
                         </span>
                         {% if post.audio %}
