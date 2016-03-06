@@ -79,6 +79,10 @@ a[href]:not([class]) {
 	border-color: #00a8ab;
 }
 
+.content h4 {
+	margin-bottom: 16px;
+}
+
 .is-lh {
 	line-height: 2em;
 }
@@ -364,4 +368,7 @@ i.kast-mdi-album:before {
 /*banner*/
 .brain {
 	margin-top: 80px;
+}
+header {
+	margin-bottom: -160px;
 }
