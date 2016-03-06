@@ -7,13 +7,8 @@
     {% if page.title == "Home" %}
       {{ site.title }} &middot; {{ site.tagline }}
     {% else %}
-        {% if page.is == "sunday-live" %}
-          Воскресный эфио: {{ site.title }} &middot; {{ site.tagline }}
-        {% else %}
-            {{ page.title }} на {{ site.title }}
-        {% endif %}
+      {{ page.title }} на {{ site.title }}
     {% endif %}
-
   </title>
 
 {% if page.description %}
