@@ -229,7 +229,7 @@ audio.sunday-live {
 .footer {
 	position: fixed;
 	height: 60px;
-	background: rgba(255,255,255,0.95);
+	background: #fff;
 	z-index: 900;
 	top: 0px;
 	padding: 0;
@@ -324,9 +324,6 @@ i.kast-mdi.kast-mdi-play {
 	padding-top: 15px;
 }
 
-/*#kast-top-content {
-	background: rgba(255, 255, 255, 0.4);
-}*/
 
 #kast.kast-transparent.kast-current, .kast-album-wrapper, #kast-wrapper, #kast-top {
 	width: 100%;
