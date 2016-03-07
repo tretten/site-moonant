@@ -10,41 +10,41 @@ title: Home
         <h1 class="title is-2">Радио «Лунный муравей»</h1>
         <h2 class="subtitle">Некоммерческая радиостанция космической направленности.</h2>
         <div class="box">
-        <div class="columns">
-            <div class="column is-5 column-player">
-                <div class="player" id="player">
-                    <!-- moon-ant player -->
+            <div class="columns">
+                <div class="column is-5 column-player">
+                    <div class="player" id="player">
+                        <!-- moon-ant player -->
+                    </div>
+                </div>
+                <div class="column is-left is-7 content column-right">
+                    <h4>На этой неделе в ротации</h4>
+                    {% for post in site.categories.rotation limit:1 %}
+                    <dl>
+                        {% if post.album-1%}
+                        <li><span class="likebtn-wrapper" data-white_label="true" data-theme="custom" data-btn_size="16" data-icon_l="hrt6" data-icon_size="14" data-icon_l_c_v="#00a8ab" data-bg_c="rgba(255,255,255,0)" data-brdr_c="rgba(255,255,255,0)" data-label_fs="r" data-lang="ru" data-identifier="Album: {{ post.album-1 }}" data-show_like_label="false" data-dislike_enabled="false" data-counter_show="false" data-popup_width="200"></span>
+                            {{ post.album-1 }}</li>{% endif %}
+                        {% if post.album-2%}
+                        <li><span class="likebtn-wrapper" data-white_label="true" data-theme="custom" data-btn_size="16" data-icon_l="hrt6" data-icon_size="14" data-icon_l_c_v="#00a8ab" data-bg_c="rgba(255,255,255,0)" data-brdr_c="rgba(255,255,255,0)" data-label_fs="r" data-lang="ru" data-identifier="Album: {{ post.album-2 }}" data-show_like_label="false" data-dislike_enabled="false" data-counter_show="false" data-popup_width="200"></span>
+                            {{ post.album-2 }}</li>{% endif %}
+                        {% if post.album-3%}
+                        <li><span class="likebtn-wrapper" data-white_label="true" data-theme="custom" data-btn_size="16" data-icon_l="hrt6" data-icon_size="14" data-icon_l_c_v="#00a8ab" data-bg_c="rgba(255,255,255,0)" data-brdr_c="rgba(255,255,255,0)" data-label_fs="r" data-lang="ru" data-identifier="Album: {{ post.album-3 }}" data-show_like_label="false" data-dislike_enabled="false" data-counter_show="false" data-popup_width="200"></span>
+                            {{ post.album-3 }}</li>{% endif %}
+                        {% if post.album-4%}
+                        <li><span class="likebtn-wrapper" data-white_label="true" data-theme="custom" data-btn_size="16" data-icon_l="hrt6" data-icon_size="14" data-icon_l_c_v="#00a8ab" data-bg_c="rgba(255,255,255,0)" data-brdr_c="rgba(255,255,255,0)" data-label_fs="r" data-lang="ru" data-identifier="Album: {{ post.album-4 }}" data-show_like_label="false" data-dislike_enabled="false" data-counter_show="false" data-popup_width="200"></span>
+                            {{ post.album-4 }}</li>{% endif %}
+                        {% if post.album-5%}
+                        <li><span class="likebtn-wrapper" data-white_label="true" data-theme="custom" data-btn_size="16" data-icon_l="hrt6" data-icon_size="14" data-icon_l_c_v="#00a8ab" data-bg_c="rgba(255,255,255,0)" data-brdr_c="rgba(255,255,255,0)" data-label_fs="r" data-lang="ru" data-identifier="Album: {{ post.album-5 }}" data-show_like_label="false" data-dislike_enabled="false" data-counter_show="false" data-popup_width="200"></span>
+                            {{ post.album-5 }}</li>{% endif %}
+                        {% if post.album-6%}
+                        <li><span class="likebtn-wrapper" data-white_label="true" data-theme="custom" data-btn_size="16" data-icon_l="hrt6" data-icon_size="14" data-icon_l_c_v="#00a8ab" data-bg_c="rgba(255,255,255,0)" data-brdr_c="rgba(255,255,255,0)" data-label_fs="r" data-lang="ru" data-identifier="Album: {{ post.album-6 }}" data-show_like_label="false" data-dislike_enabled="false" data-counter_show="false" data-popup_width="200"></span>
+                            {{ post.album-6 }}</li>{% endif %}
+                    </dl>
+                    <hr/>
+                    <p>{{ post.content }}</p>
+                    {% endfor %}
+                    {% include share.html %}
                 </div>
             </div>
-            <div class="column is-left content column-right">
-                <h4>На этой неделе в ротации</h4>
-                {% for post in site.categories.rotation limit:1 %}
-                <dl>
-                    {% if post.album-1%}
-                    <li><span class="likebtn-wrapper" data-white_label="true" data-theme="custom" data-btn_size="16" data-icon_l="hrt6" data-icon_size="14" data-icon_l_c_v="#00a8ab" data-bg_c="rgba(255,255,255,0)" data-brdr_c="rgba(255,255,255,0)" data-label_fs="r" data-lang="ru" data-identifier="Album: {{ post.album-1 }}" data-show_like_label="false" data-dislike_enabled="false" data-counter_show="false" data-popup_width="200"></span>
-                        {{ post.album-1 }}</li>{% endif %}
-                    {% if post.album-2%}
-                    <li><span class="likebtn-wrapper" data-white_label="true" data-theme="custom" data-btn_size="16" data-icon_l="hrt6" data-icon_size="14" data-icon_l_c_v="#00a8ab" data-bg_c="rgba(255,255,255,0)" data-brdr_c="rgba(255,255,255,0)" data-label_fs="r" data-lang="ru" data-identifier="Album: {{ post.album-2 }}" data-show_like_label="false" data-dislike_enabled="false" data-counter_show="false" data-popup_width="200"></span>
-                        {{ post.album-2 }}</li>{% endif %}
-                    {% if post.album-3%}
-                    <li><span class="likebtn-wrapper" data-white_label="true" data-theme="custom" data-btn_size="16" data-icon_l="hrt6" data-icon_size="14" data-icon_l_c_v="#00a8ab" data-bg_c="rgba(255,255,255,0)" data-brdr_c="rgba(255,255,255,0)" data-label_fs="r" data-lang="ru" data-identifier="Album: {{ post.album-3 }}" data-show_like_label="false" data-dislike_enabled="false" data-counter_show="false" data-popup_width="200"></span>
-                        {{ post.album-3 }}</li>{% endif %}
-                    {% if post.album-4%}
-                    <li><span class="likebtn-wrapper" data-white_label="true" data-theme="custom" data-btn_size="16" data-icon_l="hrt6" data-icon_size="14" data-icon_l_c_v="#00a8ab" data-bg_c="rgba(255,255,255,0)" data-brdr_c="rgba(255,255,255,0)" data-label_fs="r" data-lang="ru" data-identifier="Album: {{ post.album-4 }}" data-show_like_label="false" data-dislike_enabled="false" data-counter_show="false" data-popup_width="200"></span>
-                        {{ post.album-4 }}</li>{% endif %}
-                    {% if post.album-5%}
-                    <li><span class="likebtn-wrapper" data-white_label="true" data-theme="custom" data-btn_size="16" data-icon_l="hrt6" data-icon_size="14" data-icon_l_c_v="#00a8ab" data-bg_c="rgba(255,255,255,0)" data-brdr_c="rgba(255,255,255,0)" data-label_fs="r" data-lang="ru" data-identifier="Album: {{ post.album-5 }}" data-show_like_label="false" data-dislike_enabled="false" data-counter_show="false" data-popup_width="200"></span>
-                        {{ post.album-5 }}</li>{% endif %}
-                    {% if post.album-6%}
-                    <li><span class="likebtn-wrapper" data-white_label="true" data-theme="custom" data-btn_size="16" data-icon_l="hrt6" data-icon_size="14" data-icon_l_c_v="#00a8ab" data-bg_c="rgba(255,255,255,0)" data-brdr_c="rgba(255,255,255,0)" data-label_fs="r" data-lang="ru" data-identifier="Album: {{ post.album-6 }}" data-show_like_label="false" data-dislike_enabled="false" data-counter_show="false" data-popup_width="200"></span>
-                        {{ post.album-6 }}</li>{% endif %}
-                </dl>
-                <hr/>
-                <p>{{ post.content }}</p>
-                {% endfor %}
-                {% include share.html %}
-            </div>
-        </div>
         </div>
     </div>
   </div>
