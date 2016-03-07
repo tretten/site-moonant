@@ -1519,7 +1519,7 @@ i.kast-mdi-play:before {
 
 @media only screen and (min-width:381px) {
     #kast-wrapper {
-        width: calc(100% + 18px)
+        width: 100%
     }
 }
 
