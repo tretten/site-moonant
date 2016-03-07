@@ -1302,7 +1302,7 @@ i.kast-mdi-play:before {
     height: 50px;
     line-height: 50px;
     text-align: center;
-    margin-right: 20px;
+    /*margin-right: 20px;*/
 }
 
 .kast-p-art i.kast-mdi {
