@@ -377,6 +377,6 @@ i.kast-mdi-album:before {
 @media screen and (max-width: 769px) {
 	.box .column-left, .box .column-right {
 		padding: 20px;
-		margin-bottom: 30px;
+		padding-bottom: 30px;
 	}
 }
