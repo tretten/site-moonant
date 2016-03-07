@@ -69,6 +69,10 @@ a[href]:not([class]) {
 	color: #333;
 }
 
+.container {
+	width: 100%;
+}
+
 .content ul {
 	list-style: circle;
 	margin: 0.5em 2em 1em;
