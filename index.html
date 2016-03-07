@@ -3,56 +3,10 @@ layout: default
 title: Home
 ---
 
-<section class="hero is-fullheight" id="section0">
+<section class="hero is-fullheight" id="section1">
   <div class="hero-content">
     <div class="container">
-        <a href="{{ site.baseurl }}/"><img class="is-centered" src="{{ site.baseurl }}/public/img/moonant-icon.svg" alt="Радио Лунный муравей"/></a>
-        <h1 class="title is-2">Радио «Лунный муравей»</h1>
-        <h2 class="subtitle">Некоммерческая радиостанция космической направленности.</h2>
-      <div class="box">
-            <div class="columns">
-                <div class="column is-right is-5 content column-left">
-                    <div class="player" id="player">
-                        <!-- moon-ant player -->
-                    </div>
-                </div>
-                <div class="column is-left is-7 content column-right">
-                    <h4>Как услышать Муравья?</h4>
-                    <dl>
-                        <li><strong>На компьютерах:</strong>
-                            <ul>
-                                <li>через приложение Radium <a href="http://radium.me/m/tune-in/?b=moonant&c=1&pb=Радио%20Лунный%20Муравей&pc=Радио%20Лунный%20Муравей&h=&"  class="button is-small">Radium Mac OSX</a> </li>
-                                <li>Winamp или iTunes <a href="http://s25.myradiostream.com:12650/listen.pls"  class="button is-small">*.pls</a></li>
-                                <li>Windows Media Player <a href="http://myradiostream.com/25/12650.asx"  class="button is-small">*.asx</a></li>
-                                <li>VLC Player и др. <a href="http://s25.myradiostream.com:12650/listen.m3u"  class="button is-small">*.m3u</a></li>
-                                <li>а также на сайте, используя встроенный <a href="#section1" class="button is-small play">web-player</a></li>
-                            </ul>
-                        </li>
-                        <li><strong>На смартфонах:</strong>
-                            <ul>
-                                <li>используя приложение Radium <a href="http://radium.me/m/tune-in/?b=moonant&c=1&pb=Радио%20Лунный%20Муравей&pc=Радио%20Лунный%20Муравей&h=&"  class="button is-small">Radium iOS (free)</a></li>
-                            </ul>
-                        </li>
-                        <hr/>
-                    </dl>
-                    <p>Присоединяйтесь к сообществам Лунного Муравья</p>
-                    <p>
-                        <a href="https://www.youtube.com/channel/UCfUTABZP2Yz8wLTY5h78Vcg"  class="button is-primary"><i class="fa fa-youtube"></i>Канал на Youtube</a>
-                        <a href="https://vk.com/moonant" class="button is-primary"><i class="fa fa-vk"></i>/moonant</a>
-                        <a href="https://twitter.com/@moonant_radio" class="button is-primary"><i class="fa fa-twitter"></i>@moonant_radio</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-  </div>
-</section>
-
-
-<section class="hero is-fullheight" id="section1">
-   <div class="hero-content">
-        <div class="container">
-        <a href="{{ site.baseurl }}/"><img class="is-centered" src="{{ site.baseurl }}/public/img/moonant-icon.svg" alt="Радио Лунный муравей"/></a>
+        <a href="{{ site.baseurl }}/"><img class="is-centered" src="{{ site.baseurl }}/public/img/moonant-icon.svg"/></a>
         <h1 class="title is-2">Радио «Лунный муравей»</h1>
         <h2 class="subtitle">Некоммерческая радиостанция космической направленности.</h2>
         <div class="box">
@@ -65,7 +19,7 @@ title: Home
                 <div class="column is-left is-7 content column-right">
                     <h4>На этой неделе в ротации</h4>
                     {% for post in site.categories.rotation limit:1 %}
-                    <ul>
+                    <dl>
                         {% if post.album-1%}
                         <li><span class="likebtn-wrapper" data-white_label="true" data-theme="custom" data-btn_size="16" data-icon_l="hrt6" data-icon_size="14" data-icon_l_c_v="#00a8ab" data-bg_c="rgba(255,255,255,0)" data-brdr_c="rgba(255,255,255,0)" data-label_fs="r" data-lang="ru" data-identifier="Album: {{ post.album-1 }}" data-show_like_label="false" data-dislike_enabled="false" data-counter_show="false" data-popup_width="200"></span>
                             {{ post.album-1 }}</li>{% endif %}
@@ -86,7 +40,7 @@ title: Home
                             {{ post.album-6 }}</li>{% endif %}
                     </dl>
                     <hr/>
-                    {{ post.content }}
+                    <p>{{ post.content }}</p>
                     {% endfor %}
                     {% include share.html %}
                 </div>
