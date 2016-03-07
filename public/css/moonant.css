@@ -136,11 +136,6 @@ div.column.is-5.column-player {
 	padding: 0;
 }
 
-.box .column-player {
-	background: rgba(255,255,255,0.9);
-	z-index: 1;
-}
-
 .box .column-left, .box .column-right {
 	padding: 30px;
 	overflow-y: hidden;
@@ -253,6 +248,9 @@ audio.sunday-live {
 	border-left: 1px solid #d3d6db;
 	border-right: 1px solid #d3d6db;
 	height: 60px;
+	font-family: 'kast-mdi' !important;
+	font-style: normal;
+	font-size: 26px;
 }
 
 .footer .play-bar a i {
@@ -262,10 +260,11 @@ audio.sunday-live {
 	height: 60px;
 	display: block;
 	line-height: 60px;
+	font-style: normal;
 }
 
 .footer .play-bar a i:hover {
-	background: #fff;
+
 	color: #00a8ab;
 }
 
@@ -281,7 +280,7 @@ audio.sunday-live {
 }
 
 .footer:hover .play-bar {
-	background: #fff;
+
 }
 
 .footer #nowplay-share h6 {
@@ -298,7 +297,21 @@ ul.ya-share2__list.ya-share2__list_direction_horizontal {
 
 /*_Player*/
 
-#kast-play {
+.box .column-player {
+	background: #e6f1f1;
+	z-index: 1;
+}
+
+#kast {
+	width: 100%;
+	min-height: 408px;
+}
+
+#kast.kast-transparent.kast-current {
+	height: 408px;
+}
+
+#kast, #kast-play, i.kast-mdi.kast-mdi-play {
 	box-shadow: none;
 }
 
@@ -311,17 +324,12 @@ transparent.kast-colors-dynamic.kast-maximized.kast-left.kast-not-full-statusbar
 	right: 120px;
 }
 
-#kast, #kast.kast-transparent.kast-current {
-	box-shadow: none;
-}
-
-i.kast-mdi.kast-mdi-play {
-	box-shadow: none;
-}
-
 #kast-top {
 	background-position: center top;
 	background-image: url(../img/cover.jpg);
+	width: 100%;
+	height: 100%;
+	background-size: cover;
 }
 
 #kast-np-title {
@@ -333,7 +341,12 @@ i.kast-mdi.kast-mdi-play {
 }
 
 div#kast-top-content.kast-top-content {
-	background: rgba(255,255,255,0.8)!important;
+	background: -moz-linear-gradient(top,  rgba(230,241,241,0.6) 0%, rgba(230,241,241,1) 71%, rgba(230,241,241,1) 100%);
+	background: -webkit-linear-gradient(top,  rgba(230,241,241,0.6) 0%,rgba(230,241,241,1) 71%,rgba(230,241,241,1) 100%);
+	background: linear-gradient(to bottom,  rgba(230,241,241,0.6) 0%,rgba(230,241,241,1) 71%,rgba(230,241,241,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cce6f1f1', endColorstr='#e6f1f1',GradientType=0 );
+
+
 }
 
 p#kast-np-artist, p#kast-np-title {
@@ -361,4 +374,10 @@ i.kast-mdi-album:before {
 /*banner*/
 .brain {
 	margin-top: 80px;
+}
+
+@media screen and (max-width: 769px) {
+	.box .column-left, .box .column-right {
+		padding: 20px;
+	}
 }

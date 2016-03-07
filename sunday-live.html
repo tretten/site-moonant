@@ -8,6 +8,7 @@ title:  Все выпуски «Воскресного эфира»
     <div class="container">
       <a href="{{ site.baseurl }}/"><img class="is-centered" src="{{ site.baseurl }}/public/img/moonant-icon.svg"/></a>
       <h1 class="title is-2">{{ page.title }}</h1>
+      <h2 class="subtitle">«Воскресный эфир» — это живая беседа, обсуждение последних и предпоследних новостей, мысли вслух, декламации и бормотанье — а также обзор ротации на следующую неделю.</h2>
       <div class="columns navbar">
           <div class="column is-4 is-left">
               <h2 class="subtitle">&#8612; <a href="{{ site.baseurl }}/">На главную</a></h2>
@@ -32,7 +33,8 @@ title:  Все выпуски «Воскресного эфира»
                     {% endif %}
                 </div>
                 <div class="column is-left content column-right">
-                    <a href="{{ site.baseurl }}{{ post.url }}"><h4 class="episode title is-5"><strong>Выпуск #{{ post.number }}: {{ post.title }}</strong></h4></a>
+                    <a href="{{ site.baseurl }}{{ post.url }}">
+                        <h4 class="episode title is-4">Выпуск #{{ post.number }}: {{ post.title }}</h4></a>
                     <p>{{ post.description }}</p>
                     {% if post.audio %}
                     <p>
