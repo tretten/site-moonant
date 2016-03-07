@@ -138,7 +138,6 @@ div.column.is-5.column-player {
 
 .box .column-left, .box .column-right {
 	padding: 30px;
-	overflow-y: hidden;
 }
 
 .box .column-left {
