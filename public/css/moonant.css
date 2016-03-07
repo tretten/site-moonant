@@ -314,7 +314,6 @@ transparent.kast-colors-dynamic.kast-maximized.kast-left.kast-not-full-statusbar
 #kast, #kast.kast-transparent.kast-current {
 	box-shadow: none;
 	height: 408px;
-	width: 100%;
 }
 
 i.kast-mdi.kast-mdi-play {
@@ -325,7 +324,6 @@ i.kast-mdi.kast-mdi-play {
 	background-position: center top;
 	background-image: url(../img/cover.jpg);
 	height: 408px;
-	width: 100%;
 }
 
 #kast-np-title {
@@ -338,7 +336,7 @@ i.kast-mdi.kast-mdi-play {
 
 
 #kast.kast-transparent.kast-current, .kast-album-wrapper, #kast-wrapper, #kast-top {
-
+	
 }
 
 div#kast-top-content.kast-top-content {
