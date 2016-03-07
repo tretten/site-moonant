@@ -323,6 +323,7 @@ i.kast-mdi.kast-mdi-play {
 #kast-top {
 	background-position: center top;
 	background-image: url(../img/cover.jpg);
+	width: 408px;
 	height: 408px;
 }
 
@@ -336,7 +337,7 @@ i.kast-mdi.kast-mdi-play {
 
 
 #kast.kast-transparent.kast-current, .kast-album-wrapper, #kast-wrapper, #kast-top {
-	
+
 }
 
 div#kast-top-content.kast-top-content {
