@@ -313,7 +313,6 @@ transparent.kast-colors-dynamic.kast-maximized.kast-left.kast-not-full-statusbar
 
 #kast, #kast.kast-transparent.kast-current {
 	box-shadow: none;
-	height: 408px;
 }
 
 i.kast-mdi.kast-mdi-play {
@@ -323,8 +322,6 @@ i.kast-mdi.kast-mdi-play {
 #kast-top {
 	background-position: center top;
 	background-image: url(../img/cover.jpg);
-	width: 408px;
-	height: 408px;
 }
 
 #kast-np-title {
@@ -333,11 +330,6 @@ i.kast-mdi.kast-mdi-play {
 
 #kast-np-artist {
 	padding-top: 15px;
-}
-
-
-#kast.kast-transparent.kast-current, .kast-album-wrapper, #kast-wrapper, #kast-top {
-	width: 408px;
 }
 
 div#kast-top-content.kast-top-content {

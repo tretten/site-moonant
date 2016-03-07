@@ -1237,7 +1237,7 @@ i.kast-mdi-play:before {
     -webkit-transform: scale(0);
     -ms-transform: scale(0);
     transform: scale(0);
-    
+
     -webkit-transition: width .28s cubic-bezier(0.4, 0, 0.2, 1) .28s, transform .28s cubic-bezier(0.4, 0, 0.2, 1), opacity .28s cubic-bezier(0.4, 0, 0.2, 1);
     transition: width .28s cubic-bezier(0.4, 0, 0.2, 1) .28s, transform .28s cubic-bezier(0.4, 0, 0.2, 1), opacity .28s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1334,7 +1334,7 @@ i.kast-mdi-play:before {
 }
 
 #kast-bottom p,
-#kast-bottom div, 
+#kast-bottom div,
 #kast-bottom i {
     transition-delay: .56s
 }
