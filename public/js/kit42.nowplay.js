@@ -15,7 +15,6 @@ function myWrite(msg){
 
 document.write   = myWrite;
 
-
 function reload_js(id, src, on_load){
     $('#' + id).remove();
     var head     = document.getElementsByTagName('head')[0];
