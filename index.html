@@ -50,6 +50,58 @@ title: Home
   </div>
 </section>
 
+<section class="hero is-fullheight" id="section2">
+  <div class="hero-content">
+    <div class="container">
+      <h1 class="title is-2">«Воскресный эфир»</h1>
+      <h2 class="subtitle">Каждое воскресенье вас ждет живая беседа, обсуждение последних и предпоследних новостей, мысли вслух, декламации и бормотанье — а также обзор ротации на следующую неделю.</h2>
+      {% for post in site.categories.sunday-live limit:1 %}
+      <div class="box">
+            <div class="columns">
+                <div class="column is-right is-5 content column-left">
+                    <a href="{{ post.url }}"><h4 class="episode title is-5"><strong>Выпуск #{{ post.number }}:<br/>{{ post.title }}</strong></h4></a>
+                    <h5 class="subtitle is-6">
+                        {% assign m = post.date | date: "%-m" %}
+                        {{ post.date | date: "%-d" }}
+                        {% case m %}{% when '1' %}января{% when '2' %}февраля{% when '3' %}марта{% when '4' %}апреля{% when '5' %}мая{% when '6' %}июня{% when '7' %}июля{% when '8' %}августа{% when '9' %}сентября{% when '10' %}октября{% when '11' %}ноября{% when '12' %}декабря{% endcase %}
+                        {{ post.date | date: "%Y" }}
+                    </h5>
+                    {% if post.image %}
+                    <a href="{{ site.baseurl }}{{ post.url }}#toggleText"><img class="sunday-live" src="{{ site.baseurl }}/public/sunday-live/{{ post.image }}" alt="Воскресный эфир - Выпуск {{ post.number }}: {{ post.title }}"></a>
+                    {% endif %}
+                    <div class="buttons">
+                        {% if post.audio %}
+                        <p class="is-hidden-mobile">
+                            <audio class="sunday-live" src="{{ site.baseurl }}/public/sunday-live/{{ post.audio }}" controls></audio>
+                        </p>
+                        {% endif %}
+                        <p>
+                            {% if post.yt %}
+                            <a class="button" href="{{ post.yt }}"><i class="fa fa-youtube-play"></i>YouTube</a>
+                            {% endif %}
+                            {% if post.vk %}
+                            <a class="button" href="{{ post.vk }}" ><i class="fa fa-vk"></i>ВКонтакте</a>
+                            {% endif %}
+                            {% if post.audio %}
+                            <a class="button is-primary is-hidden-tablet" href="{{ site.baseurl }}/public/sunday-live/{{ post.audio }}"><i class="fa fa-play"></i>Слушать</a><a class="button is-hidden-mobile" href="{{ site.baseurl }}/public/sunday-live/{{ post.audio }}"><i class="fa fa-arrow-down"></i>.mp3</a>
+                            {% endif %}
+                        </p>
+                        </dl>
+                    </div>
+                </div>
+                <div class="column is-left is-7 content column-right">
+                    {{ post.content }}
+                    <hr/>
+                    <a href="{{ site.baseurl }}{{ post.url }}#toggleText" class="button is-primary">Обсудить..</a>
+                    <a href="{{ site.baseurl }}/sunday-live/" class="button is-pulled-right">Все выпуски</a>
+                    <span class="is-clearfix"> </span>
+                </div>
+            </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
 
 <section class="hero is-fullheight" id="section2">
   <div class="hero-content">
