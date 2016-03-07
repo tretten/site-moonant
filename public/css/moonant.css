@@ -248,9 +248,6 @@ audio.sunday-live {
 	border-left: 1px solid #d3d6db;
 	border-right: 1px solid #d3d6db;
 	height: 60px;
-	font-family: 'kast-mdi' !important;
-	font-style: normal;
-	font-size: 26px;
 }
 
 .footer .play-bar a i {
@@ -261,6 +258,8 @@ audio.sunday-live {
 	display: block;
 	line-height: 60px;
 	font-style: normal;
+	font-family: 'kast-mdi';
+	font-size: 26px;
 }
 
 .footer .play-bar a i:hover {
