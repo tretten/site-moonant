@@ -1,4 +1,4 @@
-@import url("bulma.css"); /*основа*/
+@import url("bulma.min.css"); /*основа*/
 @import url("kast.css"); /*плеер*/
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,300&subset=latin,cyrillic-ext); /*шрифт*/
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css); /*fa*/
