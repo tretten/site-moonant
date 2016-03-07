@@ -3,10 +3,58 @@ layout: default
 title: Home
 ---
 
+<section class="hero is-fullheight" id="section0">
+  <div class="hero-content">
+    <div class="container">
+      <h1 class="title is-2">О Муравье</h1>
+      <h2 class="subtitle">Миссия Лунного Муравья — вносить радость в дневные заботы, собирать интересные образцы мысли и поддерживать натяжение небесных струн.</h2>
+      <div class="box">
+            <div class="columns">
+                <div class="column is-right is-5 content column-left">
+                    <blockquote>
+                        <p>Горный муравей – так отчетливо он заметен на белом пионе..</p>
+                        <p><a href="https://ru.wikipedia.org/wiki/Ёса_Бусон" >— Ёса Бусон</a></p>
+                    </blockquote>
+                </div>
+                <div class="column is-left is-7 content column-right">
+                    <h4>Как услышать Муравья?</h4>
+                    <dl>
+                        <li><strong>На компьютерах:</strong>
+                            <ul>
+                                <li>через приложение Radium <a href="http://radium.me/m/tune-in/?b=moonant&c=1&pb=Радио%20Лунный%20Муравей&pc=Радио%20Лунный%20Муравей&h=&"  class="button is-small">Radium Mac OSX</a> </li>
+                                <li>Winamp или iTunes <a href="http://s25.myradiostream.com:12650/listen.pls"  class="button is-small">*.pls</a></li>
+                                <li>Windows Media Player <a href="http://myradiostream.com/25/12650.asx"  class="button is-small">*.asx</a></li>
+                                <li>VLC Player и др. <a href="http://s25.myradiostream.com:12650/listen.m3u"  class="button is-small">*.m3u</a></li>
+                                <li>а также на сайте, используя встроенный <a href="#section1" class="button is-small play">web-player</a></li>
+                            </ul>
+                        </li>
+                        <li><strong>На смартфонах:</strong>
+                            <ul>
+                                <li>используя приложение Radium <a href="http://radium.me/m/tune-in/?b=moonant&c=1&pb=Радио%20Лунный%20Муравей&pc=Радио%20Лунный%20Муравей&h=&"  class="button is-small">Radium iOS (free)</a></li>
+                            </ul>
+                        </li>
+                        <hr/>
+                    </dl>
+                    <p>Присоединяйтесь к сообществам Лунного Муравья</p>
+                    <p>
+                        <a href="https://www.youtube.com/channel/UCfUTABZP2Yz8wLTY5h78Vcg"  class="button is-primary"><i class="fa fa-youtube"></i>Канал на Youtube</a>
+                        <a href="https://vk.com/moonant" class="button is-primary"><i class="fa fa-vk"></i>/moonant</a>
+                        <a href="https://twitter.com/@moonant_radio" class="button is-primary"><i class="fa fa-twitter"></i>@moonant_radio</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</section>
+
+
 <section class="hero is-fullheight" id="section1">
    <div class="hero-content">
         <div class="container">
-        
+        <a href="{{ site.baseurl }}/"><img class="is-centered" src="{{ site.baseurl }}/public/img/moonant-icon.svg" alt="Радио Лунный муравей"/></a>
+        <h1 class="title is-2">Радио «Лунный муравей»</h1>
+        <h2 class="subtitle">Некоммерческая радиостанция космической направленности.</h2>
         <div class="box">
             <div class="columns">
                 <div class="column is-5 column-player">
@@ -44,59 +92,6 @@ title: Home
                 </div>
             </div>
         </div>
-    </div>
-  </div>
-</section>
-
-<section class="hero is-fullheight" id="section2">
-  <div class="hero-content">
-    <div class="container">
-      <h1 class="title is-2">«Воскресный эфир»</h1>
-      <h2 class="subtitle">Каждое воскресенье вас ждет живая беседа, обсуждение последних и предпоследних новостей, мысли вслух, декламации и бормотанье — а также обзор ротации на следующую неделю.</h2>
-      {% for post in site.categories.sunday-live limit:1 %}
-      <div class="box">
-            <div class="columns">
-                <div class="column is-right is-5 content column-left">
-                    <a href="{{ post.url }}"><h4 class="episode title is-5"><strong>Выпуск #{{ post.number }}:<br/>{{ post.title }}</strong></h4></a>
-                    <h5 class="subtitle is-6">
-                        {% assign m = post.date | date: "%-m" %}
-                        {{ post.date | date: "%-d" }}
-                        {% case m %}{% when '1' %}января{% when '2' %}февраля{% when '3' %}марта{% when '4' %}апреля{% when '5' %}мая{% when '6' %}июня{% when '7' %}июля{% when '8' %}августа{% when '9' %}сентября{% when '10' %}октября{% when '11' %}ноября{% when '12' %}декабря{% endcase %}
-                        {{ post.date | date: "%Y" }}
-                    </h5>
-                    {% if post.image %}
-                    <a href="{{ site.baseurl }}{{ post.url }}#toggleText"><img class="sunday-live" src="{{ site.baseurl }}/public/sunday-live/{{ post.image }}" alt="Воскресный эфир - Выпуск {{ post.number }}: {{ post.title }}"></a>
-                    {% endif %}
-                    <div class="buttons">
-                        {% if post.audio %}
-                        <p class="is-hidden-mobile">
-                            <audio class="sunday-live" src="{{ site.baseurl }}/public/sunday-live/{{ post.audio }}" controls></audio>
-                        </p>
-                        {% endif %}
-                        <p>
-                            {% if post.yt %}
-                            <a class="button" href="{{ post.yt }}"><i class="fa fa-youtube-play"></i>YouTube</a>
-                            {% endif %}
-                            {% if post.vk %}
-                            <a class="button" href="{{ post.vk }}" ><i class="fa fa-vk"></i>ВКонтакте</a>
-                            {% endif %}
-                            {% if post.audio %}
-                            <a class="button is-primary is-hidden-tablet" href="{{ site.baseurl }}/public/sunday-live/{{ post.audio }}"><i class="fa fa-play"></i>Слушать</a><a class="button is-hidden-mobile" href="{{ site.baseurl }}/public/sunday-live/{{ post.audio }}"><i class="fa fa-arrow-down"></i>.mp3</a>
-                            {% endif %}
-                        </p>
-                        </dl>
-                    </div>
-                </div>
-                <div class="column is-left is-7 content column-right">
-                    {{ post.content }}
-                    <hr/>
-                    <a href="{{ site.baseurl }}{{ post.url }}#toggleText" class="button is-primary">Обсудить..</a>
-                    <a href="{{ site.baseurl }}/sunday-live/" class="button is-pulled-right">Все выпуски</a>
-                    <span class="is-clearfix"> </span>
-                </div>
-            </div>
-        </div>
-      {% endfor %}
     </div>
   </div>
 </section>
