@@ -23,9 +23,6 @@ layout: null
 
     <itunes:category text="Music">
       <itunes:category text="Music"/>
-        <media:category scheme="http://www.itunes.com/dtds/podcast-1.0.dtd">Society & Culture/Personal Journals</media:category>
-        <media:category scheme="http://www.itunes.com/dtds/podcast-1.0.dtd">Technology/Gadgets</media:category>
-        <media:category scheme="http://www.itunes.com/dtds/podcast-1.0.dtd">Society & Culture/Philosophy</media:category>
     </itunes:category>
 
     <itunes:explicit>no</itunes:explicit>
