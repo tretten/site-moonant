@@ -1154,7 +1154,7 @@
                 kastBar = document.getElementById('kast-bar'),
                 kastTopC = document.getElementById('kast-top-content'),
                 kastPlay = document.getElementById('kast-play');
-                kastColumn = document.getElementById('kast-top-content');
+                kastColumn = document.getElementById('column-player');
 
             var processStats = function (data) {
                 // -- Mutual data for current track/artist and current artist artwork
