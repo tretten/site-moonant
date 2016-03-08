@@ -1154,6 +1154,7 @@
                 kastBar = document.getElementById('kast-bar'),
                 kastTopC = document.getElementById('kast-top-content'),
                 kastPlay = document.getElementById('kast-play');
+                kastColumn = document.getElementById('kast-top-content');
 
             var processStats = function (data) {
                 // -- Mutual data for current track/artist and current artist artwork
@@ -1286,6 +1287,7 @@
                                                 }
                                                 kastTopC.className = 'kast-top-content ' + primaryCC;
                                                 kastTopC.style.backgroundColor = primaryBG;
+                                                kastColumn.style.backgroundColor = primaryBG;
                                                 if (ot.statusBar) {
                                                     kastBar.className = primaryCC;
                                                 }
