@@ -28,7 +28,7 @@
         artwork: true, // Pull album artwork (or artist artwork as a fallback) from Spotify API or set a custom one @boolean @array
         statusBar: false, // Show status bar at the top @boolean
         minimizeMaximize: false, // Show minimize/maximize button in status bar @boolean
-        muteUnmute: true, // Show mute/unmute button in status bar
+        muteUnmute: false, // Show mute/unmute button in status bar
         startMuted: false, // Start audio muted on load @boolean
         serverInfo: false, // Show serverInfo in status bar or set custom info @string @array @false
         played: false, // Show played tracks/artists @boolean
@@ -40,8 +40,8 @@
         language: {
             offlineText: 'Temporarily Offline', // On offline: status bar text @string
             playedText: 'Played', // Played title (player bottom) @string
-            unknownTrackText: 'Играет', // Set unknown track text when error
-            unknownArtistText: 'Музыка' // Set unknown artist text when error
+            unknownTrackText: 'Музыка', // Set unknown track text when error
+            unknownArtistText: 'В эфире' // Set unknown artist text when error
         }, // Set text (Multi language support) @object
         mobileCare: false, // low (aka true), medium, high, very high, ultra @boolean @array
         irrelevantWords: ['feat.', 'ft.', 'Feat.', 'Ft.'], // irrelvant words in SHOUTcast full song title @false or @array
@@ -1284,12 +1284,12 @@
                                                 } else {
                                                     kastPlay.className = 'kast-paused ' + accentCC
                                                 }
-                                                kastTopC.className = 'kast-top-content kast-primary-dark';
+                                                kastTopC.className = 'kast-top-content ' + primaryCC;
                                                 if (ot.statusBar) {
                                                     kastBar.className = primaryCC;
                                                 }
                                                 kastPlay.style.backgroundColor = accentBG;
-                                                kastBG.style.color = accentBG;
+
                                                 if (ot.ui === 'colored') {
                                                     kastTopC.style.backgroundColor = primaryBG;
                                                 }
@@ -1549,7 +1549,6 @@
             var kast = document.getElementById('kast'),
                 kastServer = document.getElementById('kast-server'),
                 kastPlay = document.getElementById('kast-play'),
-                kastBG = document.getElementById('kast-np-artist'),
                 kastC;
 
             if(classL) {
