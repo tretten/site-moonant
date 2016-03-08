@@ -28,7 +28,7 @@
         artwork: true, // Pull album artwork (or artist artwork as a fallback) from Spotify API or set a custom one @boolean @array
         statusBar: false, // Show status bar at the top @boolean
         minimizeMaximize: false, // Show minimize/maximize button in status bar @boolean
-        muteUnmute: false, // Show mute/unmute button in status bar
+        muteUnmute: true, // Show mute/unmute button in status bar
         startMuted: false, // Start audio muted on load @boolean
         serverInfo: false, // Show serverInfo in status bar or set custom info @string @array @false
         played: false, // Show played tracks/artists @boolean
@@ -40,8 +40,8 @@
         language: {
             offlineText: 'Temporarily Offline', // On offline: status bar text @string
             playedText: 'Played', // Played title (player bottom) @string
-            unknownTrackText: 'Композиция', // Set unknown track text when error
-            unknownArtistText: 'Исполнитель' // Set unknown artist text when error
+            unknownTrackText: 'Играет', // Set unknown track text when error
+            unknownArtistText: 'Музыка' // Set unknown artist text when error
         }, // Set text (Multi language support) @object
         mobileCare: false, // low (aka true), medium, high, very high, ultra @boolean @array
         irrelevantWords: ['feat.', 'ft.', 'Feat.', 'Ft.'], // irrelvant words in SHOUTcast full song title @false or @array
@@ -1284,7 +1284,7 @@
                                                 } else {
                                                     kastPlay.className = 'kast-paused ' + accentCC
                                                 }
-                                                kastTopC.className = 'kast-top-content ' + primaryCC;
+                                                kastTopC.className = 'kast-top-content kast-primary-dark';
                                                 if (ot.statusBar) {
                                                     kastBar.className = primaryCC;
                                                 }
