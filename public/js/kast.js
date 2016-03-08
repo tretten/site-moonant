@@ -1285,6 +1285,7 @@
                                                     kastPlay.className = 'kast-paused ' + accentCC
                                                 }
                                                 kastTopC.className = 'kast-top-content ' + primaryCC;
+                                                kastTopC.style.backgroundColor = primaryBG;
                                                 if (ot.statusBar) {
                                                     kastBar.className = primaryCC;
                                                 }

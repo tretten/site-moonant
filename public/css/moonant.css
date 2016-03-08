@@ -352,7 +352,7 @@ div#kast-top-content.kast-top-content {
 }
 
 p#kast-np-title {
-	color: rgba(0, 0, 0, .87)!important;
+	color: rgba(0, 0, 0, .87);
 }
 
 i.kast-mdi-album:before {
