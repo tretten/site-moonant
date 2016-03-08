@@ -1289,7 +1289,7 @@
                                                     kastBar.className = primaryCC;
                                                 }
                                                 kastPlay.style.backgroundColor = accentBG;
-
+                                                section1.style.backgroundColor = accentBG;
                                                 if (ot.ui === 'colored') {
                                                     kastTopC.style.backgroundColor = primaryBG;
                                                 }
@@ -1549,6 +1549,7 @@
             var kast = document.getElementById('kast'),
                 kastServer = document.getElementById('kast-server'),
                 kastPlay = document.getElementById('kast-play'),
+                section1 = document.getElementById('section1'),
                 kastC;
 
             if(classL) {
