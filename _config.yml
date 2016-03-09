@@ -6,7 +6,7 @@ title:               Радио «Лунный муравей»
 tagline:             некоммерческая радиостанция космической направленности
 url:                 "http://moon-ant.com"
 paginate:            10
-baseurl:             "http://moon-ant.com"
+#baseurl:             "http://moon-ant.com"
 
 # Gems
 gems:

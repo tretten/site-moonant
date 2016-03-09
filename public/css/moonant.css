@@ -151,13 +151,6 @@ div.column.is-5.column-player {
 	background: rgba(255,255,255,0.9);
 }
 
-.box .column-left-0 img.sunday-live {
-	min-height: 336px;
-	width: auto;
-	margin: 0;
-	object-fit: cover;
-}
-
 .box .column-left-0 .image.is-square {
 	padding: 0;
 }
@@ -198,6 +191,10 @@ audio.sunday-live {
 
 .button .fa {
 	margin: 0 0 0 -7px;
+}
+
+.button.notext .fa {
+	margin: 0 -5px 0 -5px;
 }
 
 .button.icon-fa .fa {
@@ -375,6 +372,43 @@ i.kast-mdi-album:before {
 /*banner*/
 .brain {
 	margin-top: 80px;
+}
+
+.sl-cover {
+	position: relative;
+}
+
+.sl-youtube {
+    position: relative;
+    text-align: center;
+    width: 100%;
+	overflow: hidden;
+}
+
+.sl-youtube:after {
+	content: "";
+	display: block;
+	padding-bottom: 100%;
+}
+
+.sl-youtube iframe {
+	position: absolute;
+	top: -17%;
+	left: 0;
+	width: 100%;
+	height: 134%;
+	z-index: 9;
+}
+
+.sl-cover img.sunday-live {
+	position: absolute;
+	top:0;
+	left:0;
+	z-index: 10;
+}
+
+.sl-cover:hover img.sunday-live {
+	z-index: 0;
 }
 
 @media screen and (max-width: 769px) {

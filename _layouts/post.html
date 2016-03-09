@@ -24,25 +24,34 @@ layout: default
 
         <div class="box">
               <div class="columns">
-                  <div class="column is-right is-5 content column-left">
-                      {% if page.image %}
-                      <img class="sunday-live" src="{{ site.baseurl }}/public/sunday-live/{{ page.image }}" alt="Воскресный эфир - Выпуск {{ page.number }}: {{ page.title }}">
-                      {% endif %}
+                  <div class="column is-5 content column-left">
+                      <div class="sl-cover">
+                          {% if page.yt %}
+                          <div class="sl-youtube">
+                              <iframe src="https://www.youtube.com/embed/{{ page.yt }}?showinfo=0" frameborder="0"></iframe>
+                          </div>
+                          {% endif %}
+                          {% if page.image %}
+                          <img class="sunday-live" src="{{ site.baseurl }}/public/sunday-live/{{ page.image }}" alt="Воскресный эфир - Выпуск {{ page.number }}: {{ page.title }}">
+                          {% endif %}
+                      </div>
                       <div class="buttons">
                           {% if page.audio %}
+                          <p> </p>
+                          <h5 class="is-hidden-mobile">Слушать:</h5>
                           <p class="is-hidden-mobile">
                               <audio class="sunday-live" src="{{ site.baseurl }}/public/sunday-live/{{ page.audio }}" controls></audio>
                           </p>
                           {% endif %}
                           <p>
                               {% if page.yt %}
-                              <a class="button" href="{{ page.yt }}"><i class="fa fa-youtube-play"></i>YouTube</a>
+                              <a class="button notext" href="https://youtu.be/{{ page.yt }}?list=PLk9k93prdbkFQ8y1qMF3kebV5djqLnO9I"><i class="fa fa-youtube-play"></i></a>
                               {% endif %}
                               {% if page.vk %}
-                              <a class="button" href="{{ page.vk }}" ><i class="fa fa-vk"></i>ВКонтакте</a>
+                              <a class="button notext" href="{{ page.vk }}" ><i class="fa fa-vk"></i></a>
                               {% endif %}
                               {% if page.audio %}
-                              <a class="button is-primary is-hidden-tablet" href="{{ site.baseurl }}/public/sunday-live/{{ page.audio }}"><i class="fa fa-play"></i>Слушать</a><a class="button is-hidden-mobile" href="{{ site.baseurl }}/public/sunday-live/{{ page.audio }}"><i class="fa fa-arrow-down"></i>.mp3</a>
+                              <a class="button is-primary is-hidden-tablet" href="{{ site.baseurl }}/public/sunday-live/{{ page.audio }}"><i class="fa fa-play"></i>Слушать</a><a class="button notext is-hidden-mobile" href="{{ site.baseurl }}/public/sunday-live/{{ page.audio }}"><i class="fa fa-arrow-down"></i></a>
                               {% endif %}
                           </p>
                           </dl>
