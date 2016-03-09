@@ -172,6 +172,10 @@ div.column.is-5.column-player {
 	border-top: 1px solid #00a8ab;
 }
 
+.section1 {
+	background: transparent;
+}
+
 /*_Episode*/
 h3.episode {
 	text-transform: uppercase;
@@ -324,7 +328,7 @@ transparent.kast-colors-dynamic.kast-maximized.kast-left.kast-not-full-statusbar
 
 #kast-top {
 	background-position: center top;
-	background-image: url(../img/cover.jpg);
+	background-image: url(../img/cover.gif);
 	width: 100%;
 	height: 100%;
 	background-size: cover;
@@ -339,16 +343,15 @@ transparent.kast-colors-dynamic.kast-maximized.kast-left.kast-not-full-statusbar
 }
 
 div#kast-top-content.kast-top-content {
-	background: -moz-linear-gradient(top,  rgba(230,241,241,0.6) 0%, rgba(230,241,241,1) 71%, rgba(230,241,241,1) 100%);
-	background: -webkit-linear-gradient(top,  rgba(230,241,241,0.6) 0%,rgba(230,241,241,1) 71%,rgba(230,241,241,1) 100%);
-	background: linear-gradient(to bottom,  rgba(230,241,241,0.6) 0%,rgba(230,241,241,1) 71%,rgba(230,241,241,1) 100%);
+	background: -moz-linear-gradient(top,  rgba(230,241,241,0.2) 2%, rgba(230,241,241,0.71) 71%, rgba(230,241,241,1) 100%);
+	background: -webkit-linear-gradient(top,  rgba(230,241,241,0.2) 2%,rgba(230,241,241,0.71) 71%,rgba(230,241,241,1) 100%);
+	background: linear-gradient(to bottom,  rgba(230,241,241,0.2) 2%,rgba(230,241,241,0.71) 71%,rgba(230,241,241,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cce6f1f1', endColorstr='#e6f1f1',GradientType=0 );
-
-
+	opacity: .97;
 }
 
-p#kast-np-artist, p#kast-np-title {
-	color: rgba(0, 0, 0, .87)!important;
+p#kast-np-title {
+	color: rgba(0, 0, 0, .87);
 }
 
 i.kast-mdi-album:before {

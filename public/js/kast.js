@@ -40,8 +40,8 @@
         language: {
             offlineText: 'Temporarily Offline', // On offline: status bar text @string
             playedText: 'Played', // Played title (player bottom) @string
-            unknownTrackText: 'Композиция', // Set unknown track text when error
-            unknownArtistText: 'Исполнитель' // Set unknown artist text when error
+            unknownTrackText: 'Музыка', // Set unknown track text when error
+            unknownArtistText: 'В эфире' // Set unknown artist text when error
         }, // Set text (Multi language support) @object
         mobileCare: false, // low (aka true), medium, high, very high, ultra @boolean @array
         irrelevantWords: ['feat.', 'ft.', 'Feat.', 'Ft.'], // irrelvant words in SHOUTcast full song title @false or @array
@@ -1288,6 +1288,7 @@
                                                     kastPlay.className = 'kast-paused ' + accentCC
                                                 }
                                                 kastTopC.className = 'kast-top-content ' + primaryCC;
+                                                kastTopC.style.backgroundColor = primaryBG;
                                                 if (ot.statusBar) {
                                                     kastBar.className = primaryCC;
                                                 }
