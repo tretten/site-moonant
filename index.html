@@ -66,12 +66,12 @@ title: Home
                     </h5>
                     <div class="sl-cover">
                         {% if post.yt %}
-                        <div class="sl-youtube">
-                            <iframe src="https://www.youtube.com/embed/{{ post.yt }}?showinfo=0" frameborder="0" onclick="hideDiv()"></iframe>
+                        <div class="sl-youtube" onclick="hideDiv()">
+                            <iframe src="https://www.youtube.com/embed/{{ post.yt }}?showinfo=0" frameborder="0"></iframe>
                         </div>
                         {% endif %}
                         {% if post.image %}
-                        <img class="sunday-live" id="slImage" src="{{ site.baseurl }}/public/sunday-live/{{ post.image }}" alt="Воскресный эфир - Выпуск {{ post.number }}: {{ post.title }}">
+                        <img class="sunday-live" id="sl-image" src="{{ site.baseurl }}/public/sunday-live/{{ post.image }}" alt="Воскресный эфир - Выпуск {{ post.number }}: {{ post.title }}">
                         {% endif %}
                     </div>
                     <div class="buttons">
