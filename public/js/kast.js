@@ -107,8 +107,10 @@
         // -- Protocol
         var protocol = (window.location.protocol === 'https:') ? 'https:' : 'http:';
 
-        this.hostCORS = protocol + '//crossorigin.me/' + this.host; // ** Primary Proxy
-        this.hostCORS2 = 'https://cors-anywhere.herokuapp.com/' + this.host; // ** Alternative Proxy (Always Secure)
+        this.hostCORS = protocol + '//kit42.com/cors.php?url=' + this.host;
+
+        // this.hostCORS = protocol + '//crossorigin.me/' + this.host; // ** Primary Proxy
+        // this.hostCORS2 = 'https://cors-anywhere.herokuapp.com/' + this.host; // ** Alternative Proxy (Always Secure)
 
         //this.hostCORS = protocol + '//kastdemo-us.herokuapp.com/' + this.host;
         //this.hostCORS2 = protocol + '//kastdemo-eu.herokuapp.com/' + this.host;
@@ -1156,6 +1158,7 @@
                 kastPlay = document.getElementById('kast-play');
 
             var processStats = function (data) {
+
                 // -- Mutual data for current track/artist and current artist artwork
                 var songTitle, currentTrack, currentArtist;
 
@@ -1341,7 +1344,7 @@
 
                     })
                 }
-
+                update_song_info(currentTrack, currentArtist);
                 ot.onCurrentInfo(currentTrack, currentArtist) // Event
             };
 
