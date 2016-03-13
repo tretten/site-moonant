@@ -416,7 +416,7 @@ i.kast-mdi-album:before {
 	z-index: 10;
 }
 
-.sl-cover:hover img.sunday-live {
+.sl-cover img:hover.sunday-live {
 	z-index: 0;
 }
 
