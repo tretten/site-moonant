@@ -7,7 +7,9 @@
     <![endif]-->
     {% include header.html %}
     {% include footer.html %}
-    {{ content }}
+    <div id="main_content">
+        {{ content }}
+    </div>
       <!-- <footer class="footer">
         <small>
           &copy; <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%Y' }}</time>. All rights reserved.
