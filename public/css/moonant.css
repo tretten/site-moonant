@@ -381,7 +381,7 @@ i.kast-mdi-album:before {
 	overflow: hidden;
 }
 
-.sl-cover:after, .sl-youtube:after {
+.sl-cover:after {
 	content: "";
 	display: block;
 	padding-bottom: 100%;
