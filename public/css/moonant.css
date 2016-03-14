@@ -374,18 +374,14 @@ i.kast-mdi-album:before {
 	margin-top: 80px;
 }
 
-.sl-cover {
-	position: relative;
-}
-
-.sl-youtube {
+.sl-cover, .sl-youtube {
     position: relative;
     text-align: center;
     width: 100%;
 	overflow: hidden;
 }
 
-.sl-youtube:after {
+.sl-cover:after, .sl-youtube:after {
 	content: "";
 	display: block;
 	padding-bottom: 100%;
