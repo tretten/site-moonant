@@ -6,7 +6,7 @@ layout: null
 
   <channel>
     <title>Воскресный эфир на радио Лунный муравей</title>
-    <link>{{ site.baseurl }}</link>
+    <link>http://moon-ant.com</link>
     <language>ru-RU</language>
     <copyright>moon-ant.com</copyright>
     <itunes:subtitle>Беседы о космосе, музыке и музыкантах, об интересных историях и занятных фактах.</itunes:subtitle>
@@ -32,15 +32,15 @@ layout: null
       <itunes:subtitle>{{ post.description }}</itunes:subtitle>
       <itunes:author>moon-ant.com</itunes:author>
       <itunes:summary>
-          <img src="{{ site.baseurl }}/public/sunday-live/{{ post.image }}"/>
+          <img src="http://moon-ant.com/public/sunday-live/{{ post.image }}"/>
           {{ post.description }}
           <p>
-              <a href="{{ site.baseurl }}/public/sunday-live/{{ post.audio }}">Аудио</a> - <a href="http://j.mp/sunday-live-yt">YoutTube</a> - <a href="http://j.mp/sunday-live-vk">ВКонтакте</a> - <a href="https://twitter.com/@moonant_radio">@moonant_radio</a> - <a href="http://moon-ant.com">Радио Лунный Муравей</a>
+              <a href="http://moon-ant.com/public/sunday-live/{{ post.audio }}">Аудио</a> - <a href="http://j.mp/sunday-live-yt">YoutTube</a> - <a href="http://j.mp/sunday-live-vk">ВКонтакте</a> - <a href="https://twitter.com/@moonant_radio">@moonant_radio</a> - <a href="http://moon-ant.com">Радио Лунный Муравей</a>
           </p>
       </itunes:summary>
-      <itunes:image href="{{ site.baseurl }}/public/sunday-live/{{ post.image }}" />
+      <itunes:image href="http://moon-ant.com/public/sunday-live/{{ post.image }}" />
 
-      <enclosure url="{{ site.baseurl }}/public/sunday-live/{{ post.audio }}" length="8727310" type="audio/mpeg" />
+      <enclosure url="http://moon-ant.com/public/sunday-live/{{ post.audio }}" length="8727310" type="audio/mpeg" />
 
       <guid>{{ post.number }}</guid>
 
