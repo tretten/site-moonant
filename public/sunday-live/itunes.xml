@@ -22,7 +22,7 @@ layout: null
     <itunes:image href="http://moon-ant.com/public/sunday-live/podcast-cover.png" />
 
     <itunes:category text="Music">
-      <itunes:category text="Music"/>
+      <!-- <itunes:category text="Music"/> -->
     </itunes:category>
 
     <itunes:explicit>no</itunes:explicit>
@@ -64,7 +64,7 @@ layout: null
       <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
 
       <itunes:duration>
-          {{ post:hours }}:{{ post:minutes }}:00
+          {{ post.hours }}:{{ post.minutes }}:00
       </itunes:duration>
 
     </item>
