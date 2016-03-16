@@ -986,13 +986,14 @@
 
 
             // -- Binding (addEventListener isn't necessary, beside onclick is extremely fast)
-            document.getElementById('kast-play').onclick = function () {
+            // document.getElementById('kast-play').onclick = function () {
+            $(document).on('click', '#kast-play', function(){
                 if (this.className.indexOf('paused') !== -1) {
                     that.play()
                 } else {
                     that.pause()
                 }
-            };
+            });
 
             if (ot.statusBar) {
 
@@ -1158,7 +1159,6 @@
                 kastPlay = document.getElementById('kast-play');
 
             var processStats = function (data) {
-
                 // -- Mutual data for current track/artist and current artist artwork
                 var songTitle, currentTrack, currentArtist;
 
@@ -1345,12 +1345,18 @@
 
                     })
                 }
-                update_song_info(currentTrack, currentArtist);
                 ot.onCurrentInfo(currentTrack, currentArtist) // Event
             };
 
             if (typeof callback === 'object') {
-                processStats(callback) // because it's not a callback, it's DATA
+                var kastPlay = document.getElementById('kast-play');
+                var delay = (kastPlay.className.indexOf('playing') !== -1) ? 10000 : 1;
+                console.log('waiting ' + delay);
+                setTimeout(function(){
+                    console.log('processin');
+                    processStats(callback) // because it's not a callback, it's DATA
+                }, delay);
+
             } else {
                 var ajaxStats = function (hostCORSproxy, showError) {
                     var url = hostCORSproxy + ot.statsPath + '?sid=' + ot.sid,
@@ -1569,7 +1575,14 @@
             // -- Checker fn to check for songtitle change
             var checker = function () {
                     that.stats(function (data) {
+                        var kast = document.getElementById('kast'),
+                            kastServer = document.getElementById('kast-server'),
+                            kastPlay = document.getElementById('kast-play'),
+                            kastC;
 
+                        if(classL) {
+                            kastC = kast.classList;
+                        }
                         var isPlaying = (kastPlay.className.indexOf('playing') !== -1);
 
                         // -- Offline check

@@ -4,13 +4,52 @@
  <title>Радио «Лунный муравей»</title>
  <link href="http://moon-ant.com/atom.xml" rel="self"/>
  <link href="http://moon-ant.com/"/>
- <updated>2016-03-08T23:04:02-05:00</updated>
+ <updated>2016-03-15T20:13:31-04:00</updated>
  <id>http://moon-ant.com</id>
  <author>
    <name>Moon Ant</name>
    <email>moonant.radio@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Воскресный эфир 5 - Непобедимые корабли-черепахи</title>
+   
+   <link href="http://moon-ant.com/sunday-live/005/"/>
+   <updated>2016-03-13T00:00:00-05:00</updated>
+   <id>http://moon-ant.com/sunday-live/005</id>
+   <content type="html">&lt;h4 id=&quot;section&quot;&gt;Новости&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;О влиянии измельчения пищи на эволюцию людей.&lt;/li&gt;
+  &lt;li&gt;Каннибализм — как одна из причин вымирания неандертальцев.&lt;/li&gt;
+  &lt;li&gt;Ученые нашли древнейшее животное на земле.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;section-1&quot;&gt;Свободная тема&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;О взлётах, падениях и славных подвигах адмирала Ли Сунсина.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;section-2&quot;&gt;Ротация&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Об альбомах, вошедших в ротацию на этой неделе&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Вечерний концерт&lt;/strong&gt; (СПб Пт 20:00 / Бостон Сб 20:00)
+    &lt;ul&gt;
+      &lt;li&gt;Jojo Mayer &amp;amp; Nerve - Live in Europe (Hinterhof, Basel)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;section-3&quot;&gt;Материалы, упомянутые в этом выпуске:&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Wikipedia про Ли Цусина &lt;a href=&quot;https://ru.wikipedia.org/wiki/Ли_Сунсин&quot;&gt;на русском&lt;/a&gt; и &lt;a href=&quot;https://en.wikipedia.org/wiki/Yi_Sun-sin&quot;&gt;на английском&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Статья на &lt;a href=&quot;http://www.newworldencyclopedia.org/entry/Yi_Sunsin&quot;&gt;newworldencyclopedia.org&lt;/a&gt; о Ли Цусине&lt;/li&gt;
+  &lt;li&gt;Wikipedia про Имдинскую войну &lt;a href=&quot;https://ru.wikipedia.org/wiki/Имдинская_война&quot;&gt;на русском&lt;/a&gt; и &lt;a href=&quot;https://en.wikipedia.org/wiki/Japanese_invasions_of_Korea_(1592–98)&quot;&gt;на английском&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;По материалам &lt;a href=&quot;https://www.youtube.com/playlist?list=PLILtKfUdIVd0HfXVeDVk154fFfYe4FN0h&quot;&gt;Socialist Skeptic&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Видео с фестиваля на котором группа Massive Atatck исполняет песни Янки Дягилевой “Печаль моя” и Егора Летова “Все идет по плану” &lt;a href=&quot;https://youtu.be/5P-ajBu65Ak&quot;&gt;Youtube&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Воскресный эфир 4 - Erin go bragh!</title>

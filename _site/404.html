@@ -91,7 +91,9 @@
   </div>
 </footer>
 
-    <section class="hero is-fullheight" id="section1">
+    <div id="main_content">
+      <!-- MAIN CONTENT START -->
+      <section class="hero is-fullheight" id="section1">
   <div class="hero-content">
     <div class="container">
         <a href="/"><img class="is-centered" src="/public/img/moonant-icon.svg"/></a>
@@ -101,23 +103,17 @@
 </div>
 </section>
 
-      <!-- <footer class="footer">
-        <small>
-          &copy; <time datetime="2016-03-08T23:04:02-05:00">2016</time>. All rights reserved.
-        </small>
-      </footer> -->
+      <!-- MAIN CONTENT END -->
+    </div>
     
-<!-- Вызов плеера -->
-<script type="text/javascript">
-    $(document).ready(function() {$.kast({colors: 'dynamic',container: '#player',onPlay: function(){$('.play').hide();$('.pause').show();},onPause: function(){$('.play').show();$('.pause').hide();}})} );
-    $('.play').click( function() { $.kast('play'); return false; } );
-    $('.pause').click( function() { $.kast('pause'); return false; } );
-</script>
 <!-- Y.counter -->
 <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter21186256 = new Ya.Metrika({ id:21186256, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/21186256" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <script>peekin = {api_key: "334fa58a46c326b6f992"};</script>
 <script src="//api.peekin.io/peekin.js" async></script>
 <script type="text/javascript">
+function hideDiv() {
+   document.getElementById('sl-image').style.display = "none";
+}
 function addLink() {
     var body_element = document.getElementsByTagName('body')[0];
     var selection;

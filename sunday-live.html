@@ -39,7 +39,7 @@ title:  Все выпуски «Воскресного эфира»
                     {% if post.audio %}
                     <p>
                         <span class="is-hidden-mobile">
-                            <audio class="sunday-live" src="{{ site.baseurl }}/public/sunday-live/{{ post.audio }}" controls></audio>
+                            <audio class="sunday-live" src="{{ site.baseurl }}/public/sunday-live/{{ post.audio }}" controls preload="none"></audio>
                         </span>
                     </p>{% endif %}
                     <p>
