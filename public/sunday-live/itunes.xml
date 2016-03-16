@@ -29,14 +29,20 @@ layout: null
     {% for post in site.categories.sunday-live %}
     <item>
       <title>Воскресный эфир {{ post.number }}: {{ post.title | xml_escape}}</title>
+      <link>http://moon-ant.com/public/sunday-live/{{ post.url }}</link>
       <itunes:subtitle>{{ post.description }}</itunes:subtitle>
       <itunes:author>moon-ant.com</itunes:author>
-      <itunes:summary>
+      <description>
+      <![CDATA[
           <img src="http://moon-ant.com/public/sunday-live/{{ post.image }}"/>
           {{ post.description }}
           <p>
               <a href="http://moon-ant.com/public/sunday-live/{{ post.audio }}">Аудио</a> - <a href="http://j.mp/sunday-live-yt">YoutTube</a> - <a href="http://j.mp/sunday-live-vk">ВКонтакте</a> - <a href="https://twitter.com/@moonant_radio">@moonant_radio</a> - <a href="http://moon-ant.com">Радио Лунный Муравей</a>
           </p>
+          ]]>
+      </description>
+      <itunes:summary>
+          {{ post.description }}
       </itunes:summary>
       <itunes:image href="http://moon-ant.com/public/sunday-live/{{ post.image }}" />
 
