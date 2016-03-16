@@ -21,6 +21,7 @@ window.onpopstate = function(e){
     return false;
 };
 
+var disqus_config = function(){};
 
 function load_page(href){
     $.ajax({
@@ -33,13 +34,14 @@ function load_page(href){
             $('#main_content')[0].innerHTML = main_content;
             $('#player').html(player_content);
 
-            var disqus_config = function(){};
-            (function() {
-                var d = document, s = d.createElement('script');
-                s.src = '//moon-ant.disqus.com/embed.js';
-                s.setAttribute('data-timestamp', +new Date());
-                (d.head || d.body).appendChild(s);
-            })();
+            if ($('#disqus_thread').length){
+                (function() {
+                    var d = document, s = d.createElement('script');
+                    s.src = '//moon-ant.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            }
 
             init_buttons();
             LikeBtn.initWrappers();
