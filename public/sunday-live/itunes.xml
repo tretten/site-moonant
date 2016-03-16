@@ -64,7 +64,7 @@ layout: null
       <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
 
       <itunes:duration>
-          {{ post:hour }}:{{ post:min }}:00
+          {{ post:hours }}:{{ post:minutes }}:00
       </itunes:duration>
 
     </item>
