@@ -28,8 +28,8 @@ layout: null
     <itunes:explicit>no</itunes:explicit>
     {% for post in site.categories.sunday-live %}
     <item>
-      <title>Воскресный эфир {{ post.number }}: {{ post.title | xml_escape}}</title>
-      <itunes:subtitle>{{ post.description }}</itunes:subtitle>
+      <title>{{ post.title | xml_escape}} ({{ post.number }})</title>
+      <itunes:subtitle>Воскресный эфир {{ post.number }}: {{ post.description }}</itunes:subtitle>
       <itunes:author>moon-ant.com</itunes:author>
       <itunes:summary><![CDATA[
           <img src="http://moon-ant.com/public/sunday-live/{{ post.image }}"/>
