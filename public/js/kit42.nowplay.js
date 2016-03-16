@@ -1,6 +1,16 @@
-
-(function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");
-
+function init_like_buttons(){
+    (function(d,e,s){
+        if (old_element = d.getElementById("likebtn_wjs"))
+            old_element.parentNode.removeChild(old_element);
+            // return;
+        a = d.createElement(e);
+        m = d.getElementsByTagName(e)[0];
+        a.async=1;
+        a.id = "likebtn_wjs";
+        a.src = s;
+        m.parentNode.insertBefore(a, m)}
+    )(document,"script","//w.likebtn.com/js/w/widget.js");
+}
 function toggle() {
     var ele = document.getElementById("toggleText");
     var text = document.getElementById("displayText");
@@ -39,6 +49,10 @@ function load_page(href){
                 s.setAttribute('data-timestamp', +new Date());
                 (d.head || d.body).appendChild(s);
             })();
+
+            init_like_buttons();
+            LikeBtn.initWrappers();
+            LikeBtn.loadBunch();
         }
     })
 }
@@ -80,5 +94,6 @@ $(document).ready(function(){
         window.history.pushState(null, null, href);
         load_page(href)
         return false;
-    })
+    });
+    init_like_buttons();
 });
