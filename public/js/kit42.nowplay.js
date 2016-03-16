@@ -1,26 +1,19 @@
-function init_like_buttons(){
-    (function(d,e,s){
-        if (old_element = d.getElementById("likebtn_wjs"))
-            old_element.parentNode.removeChild(old_element);
-            // return;
-        a = d.createElement(e);
-        m = d.getElementsByTagName(e)[0];
-        a.async=1;
-        a.id = "likebtn_wjs";
-        a.src = s;
-        m.parentNode.insertBefore(a, m)}
-    )(document,"script","//w.likebtn.com/js/w/widget.js");
+function load_js(id, url){
+    if (old_element = document.getElementById(id))
+        old_element.parentNode.removeChild(old_element);
+
+    a = document.createElement('script');
+    m = document.getElementsByTagName('script')[0];
+    a.async = 1;
+    a.id = id;
+    a.src = url;
+    m.parentNode.insertBefore(a, m);
 }
-function toggle() {
-    var ele = document.getElementById("toggleText");
-    var text = document.getElementById("displayText");
-    if(ele.style.display == "block") {
-        ele.style.display = "none";
-        text.innerHTML = "Обсудить..";
-    } else {
-        ele.style.display = "block";
-        text.innerHTML = "Закрыть обсуждение";
-    }
+
+function init_buttons(){
+    load_js("likebtn_wjs", "//w.likebtn.com/js/w/widget.js");
+    load_js("yastatic_es5", "//yastatic.net/es5-shims/0.0.2/es5-shims.min.js");
+    load_js("yastatic_share", "//yastatic.net/share2/share.js");
 }
 
 // window.onpopstate = function(e){
@@ -50,7 +43,7 @@ function load_page(href){
                 (d.head || d.body).appendChild(s);
             })();
 
-            init_like_buttons();
+            init_buttons();
             LikeBtn.initWrappers();
             LikeBtn.loadBunch();
         }
@@ -95,5 +88,5 @@ $(document).ready(function(){
         load_page(href)
         return false;
     });
-    init_like_buttons();
+    init_buttons();
 });
