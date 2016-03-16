@@ -16,12 +16,10 @@ function init_buttons(){
     load_js("yastatic_share", "//yastatic.net/share2/share.js");
 }
 
-// window.onpopstate = function(e){
-//     if(e.state){
-//         console.log(e);
-//     }
-//     return false;
-// };
+window.onpopstate = function(e){
+    load_page(document.location.href);
+    return false;
+};
 
 
 function load_page(href){
