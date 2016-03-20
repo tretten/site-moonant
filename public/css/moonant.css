@@ -111,6 +111,10 @@ a[href]:not([class]) {
 	background: none;
 }
 
+header {
+	margin-top: 80px;
+}
+
 .button.is-primary {
 	background: #00a8ab;
 }
