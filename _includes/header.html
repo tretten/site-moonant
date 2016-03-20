@@ -4,6 +4,8 @@
             .concert-banner {
                 width: 980px;
                 height: 200px;
+                background: url('http://moon-ant.com/public/img/ec_banner_bg3.png') center center;
+                background-size: cover;
                 text-align: center;
                 display: table-cell;
                 vertical-align: middle;
@@ -11,6 +13,10 @@
                 -moz-osx-font-smoothing: grayscale;
                 -webkit-font-smoothing: antialiased;
                 text-rendering: optimizeLegibility;
+            }
+
+            .concert-banner:hover {
+                background-size: 120%;
             }
 
             .concert-banner h2 {
@@ -40,14 +46,10 @@
                 opacity: .9;
             }
         </style>
-        <div class="concert-banner bg" data-ibg-bg="http://moon-ant.com/public/img/ec_banner_bg3.png">
+        <div class="concert-banner">
             <h2>Вечерний концерт</h2>
             <h4>на радио «Лунный Муравей»</h4>
             <p><strong>ПТ 20:00</strong> Петербург / <strong>СБ 20:00</strong> Бостон</p>
-            <script type="text/javascript" src="http://moon-ant.com/public/js/jquery.interactive_bg.js"></script>
-            <script type="text/javascript">
-            $(".bg").interactive_bg();
-          </script>
         </div>
     </div>
 </header>
