@@ -40,7 +40,7 @@ layout: null
             {{ post:content }}
           </p>
           <p>
-              <a href="http://moon-ant.com/public/sunday-live/{{ post.audio }}">Аудио</a> - <a href="http://j.mp/sunday-live-yt">YoutTube</a> - <a href="http://j.mp/sunday-live-vk">ВКонтакте</a> - <a href="https://twitter.com/@moonant_radio">@moonant_radio</a> - <a href="http://moon-ant.com">Радио Лунный Муравей</a>
+              <a href="{{ post.audio }}">Аудио</a> - <a href="http://j.mp/sunday-live-yt">YoutTube</a> - <a href="http://j.mp/sunday-live-vk">ВКонтакте</a> - <a href="https://twitter.com/@moonant_radio">@moonant_radio</a> - <a href="http://moon-ant.com">Радио Лунный Муравей</a>
           </p>
           ]]>
       </description>
@@ -51,13 +51,13 @@ layout: null
               {{ post:content }}
             </p>
             <p>
-                <a href="http://moon-ant.com/public/sunday-live/{{ post.audio }}">Аудио</a> - <a href="http://j.mp/sunday-live-yt">YouTube</a> - <a href="http://j.mp/sunday-live-vk">ВКонтакте</a> - <a href="https://twitter.com/@moonant_radio">@moonant_radio</a> - <a href="http://moon-ant.com">Радио Лунный Муравей</a>
+                <a href="{{ post.audio }}">Аудио</a> - <a href="http://j.mp/sunday-live-yt">YouTube</a> - <a href="http://j.mp/sunday-live-vk">ВКонтакте</a> - <a href="https://twitter.com/@moonant_radio">@moonant_radio</a> - <a href="http://moon-ant.com">Радио Лунный Муравей</a>
             </p>
             ]]>
       </itunes:summary>
       <itunes:image href="http://moon-ant.com/public/sunday-live/{{ post.image }}" />
 
-      <enclosure url="http://moon-ant.com/public/sunday-live/{{ post.audio }}" length="8727310" type="audio/mpeg" />
+      <enclosure url="{{ post.audio }}" length="8727310" type="audio/mpeg" />
 
       <guid isPermaLink="false">{{ post.number }}</guid>
 
