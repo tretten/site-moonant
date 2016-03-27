@@ -79,7 +79,7 @@ title: Home
                         <p> </p>
                         <h5 class="is-hidden-mobile">Слушать:</h5>
                         <p class="is-hidden-mobile">
-                            <audio class="sunday-live" src="{{ site.baseurl }}/public/sunday-live/{{ post.audio }}" controls preload="none"></audio>
+                            <audio class="sunday-live" src="{{ post.audio }}" controls preload="none"></audio>
                         </p>
                         {% endif %}
                         <p>
@@ -90,7 +90,7 @@ title: Home
                             <a class="button notext" href="{{ post.vk }}" ><i class="fa fa-vk"></i></a>
                             {% endif %}
                             {% if post.audio %}
-                            <a class="button is-primary is-hidden-tablet" href="{{ site.baseurl }}/public/sunday-live/{{ post.audio }}"><i class="fa fa-play"></i>Слушать</a><a class="button notext is-hidden-mobile" href="{{ site.baseurl }}/public/sunday-live/{{ post.audio }}"><i class="fa fa-arrow-down"></i></a>
+                            <a class="button is-primary is-hidden-tablet" href="{{ post.audio }}"><i class="fa fa-play"></i>Слушать</a><a class="button notext is-hidden-mobile" href="{{ post.audio }}"><i class="fa fa-arrow-down"></i></a>
                             {% endif %}
                         </p>
                         </dl>

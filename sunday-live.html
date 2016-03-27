@@ -39,13 +39,13 @@ title:  Все выпуски «Воскресного эфира»
                     {% if post.audio %}
                     <p>
                         <span class="is-hidden-mobile">
-                            <audio class="sunday-live" src="{{ site.baseurl }}/public/sunday-live/{{ post.audio }}" controls preload="none"></audio>
+                            <audio class="sunday-live" src="{{ post.audio }}" controls preload="none"></audio>
                         </span>
                     </p>{% endif %}
                     <p>
                         {% if post.audio %}
-                            <a class="button is-hidden-mobile" href="{{ site.baseurl }}/public/sunday-live/{{ post.audio }}"><i class="fa fa-arrow-down"></i>.mp3</a>
-                            <a class="button is-primary is-hidden-tablet" href="{{ site.baseurl }}/public/sunday-live/{{ post.audio }}"><i class="fa fa-play"></i>Слушать</a>
+                            <a class="button is-hidden-mobile" href="{{ post.audio }}"><i class="fa fa-arrow-down"></i>.mp3</a>
+                            <a class="button is-primary is-hidden-tablet" href="{{ post.audio }}"><i class="fa fa-play"></i>Слушать</a>
                         {% endif %}
                         {% if post.yt %}
                             <a class="button" href="https://youtu.be/{{ post.yt }}?list=PLk9k93prdbkFQ8y1qMF3kebV5djqLnO9I"><i class="fa fa-youtube-play"></i>YouTube</a>
