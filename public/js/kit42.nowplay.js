@@ -37,7 +37,11 @@ function load_page(href){
         data: {history: 'Y'},
         success: function (html) {
             var player_content = $('#player').html();
-            var main_content = html.split('<!-- MAIN CONTENT START -->')[1].split('<!-- MAIN CONTENT END -->')[0];
+            var title          = html.split('<title>')[1].split('</title>')[0];
+            var main_content   = html.split('<!-- MAIN CONTENT START -->')[1].split('<!-- MAIN CONTENT END -->')[0];
+
+            document.title = title;
+
             $('#main_content')[0].innerHTML = main_content;
             $('#player').html(player_content);
 
@@ -53,6 +57,12 @@ function load_page(href){
             init_buttons();
             LikeBtn.initWrappers();
             LikeBtn.loadBunch();
+
+            if (window.location.hash != "" && $(window.location.hash).length > 0){
+                $('body,html').scrollTop($(window.location.hash).offset().top);
+            }else{
+                $('body,html').scrollTop(0);
+            }
         }
     })
 }
