@@ -5,7 +5,7 @@
 
   <title>
     {% if page.title == "Home" %}
-      {{ site.title }} &middot; {{ site.tagline }}
+      {{ site.title }} · {{ site.tagline }}
     {% else %}
       {{ page.title }} на {{ site.title }}
     {% endif %}
@@ -52,7 +52,7 @@
   <!-- Scripts -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-  
+
   <script type="text/javascript" src="{{ site.baseurl }}/public/js/kast.js"></script>
   <script type="text/javascript" src="{{ site.baseurl }}/public/js/kit42.nowplay.js"></script>
 </head>
