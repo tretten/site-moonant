@@ -49,6 +49,9 @@ layout: default
                               {% if page.vk %}
                               <a class="button notext" href="{{ page.vk }}" ><i class="fa fa-vk"></i></a>
                               {% endif %}
+                              {% if page.overcast %}
+                              <a class="button notext" href="{{ page.overcast }}" ><i class="fa fa-play-circle-o"></i></a>
+                              {% endif %}
                               {% if page.audio %}
                               <a class="button is-primary is-hidden-tablet" href="{{ page.audio }}"><i class="fa fa-play"></i>Слушать</a><a class="button notext is-hidden-mobile" href="{{ page.audio }}"><i class="fa fa-arrow-down"></i></a>
                               {% endif %}

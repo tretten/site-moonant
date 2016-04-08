@@ -52,6 +52,9 @@ title:  Все выпуски «Воскресного эфира»
                         {% if post.vk %}
                             <a class="button" href="{{ post.vk }}" ><i class="fa fa-vk"></i>ВКонтакте</a>
                         {% endif %}
+                        {% if post.overcast %}
+                            <a class="button notext" href="{{ post.overcast }}" ><i class="fa fa-play-circle-o"></i>overcast.fm</a>
+                        {% endif %}
                     </p>
                     <hr/>
                     <a href="{{ site.baseurl }}{{ post.url }}" class="button is-primary">Полное описание и комментарии</a>

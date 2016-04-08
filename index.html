@@ -89,6 +89,9 @@ title: Home
                             {% if post.vk %}
                             <a class="button notext" href="{{ post.vk }}" ><i class="fa fa-vk"></i></a>
                             {% endif %}
+                            {% if post.overcast %}
+                            <a class="button notext" href="{{ post.overcast }}" ><i class="fa fa-play-circle-o"></i></a>
+                            {% endif %}
                             {% if post.audio %}
                             <a class="button is-primary is-hidden-tablet" href="{{ post.audio }}"><i class="fa fa-play"></i>Слушать</a><a class="button notext is-hidden-mobile" href="{{ post.audio }}"><i class="fa fa-arrow-down"></i></a>
                             {% endif %}
