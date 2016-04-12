@@ -11,7 +11,9 @@ html {
 
 body, button, input, select, textarea {
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-    background: url(../img/moonant-pattern.svg) top center;
+    /*background: url(../img/moonant-pattern.svg) top center;*/
+    background: url(http://sta.mercury.onetwotrip.com/ext/201604/mail2/space.gif) top center repeat;
+    
 }
 
 a {
