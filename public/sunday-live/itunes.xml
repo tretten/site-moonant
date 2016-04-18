@@ -25,13 +25,15 @@ layout: null
       <!-- <itunes:category text="Music"/> -->
     </itunes:category>
 
-    <itunes:explicit>yes</itunes:explicit>
     {% for post in site.categories.sunday-live %}
     <item>
       <title>{{ post.title | xml_escape}} ({{ post.number }})</title>
       <link>http://moon-ant.com{{ post.url }}</link>
       <itunes:subtitle>Воскресный эфир {{ post.number }}: {{ post.description }}</itunes:subtitle>
       <itunes:author>moon-ant.com</itunes:author>
+      
+      <itunes:explicit>{{ post.explicit }}</itunes:explicit>
+      
       <description>
       <![CDATA[
           <img src="http://moon-ant.com/public/sunday-live/{{ post.image }}"/>
