@@ -94,6 +94,7 @@ a[href]:not([class]) {
 
 .subtitle {
     color: rgba(255, 255, 255, 0.85);
+    line-height: 1.5em;
 }
 
 .subtitle a {
